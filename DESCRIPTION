@@ -1,11 +1,17 @@
-Package: dartPal1
-Title: What the Package Does (One Line, Title Case)
+Package: poisonfrogs
+Title: Colour Palettes Inspired by Neotropical Poison Frogs for Data Visualization 
 Version: 0.0.0.9000
-Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Authors@R: c(
+    person("Camilo", "Rodríguez", , "camilorl@stanford.edu", role = c("aut", "cre")),
+    person("Lauren", "O'Connell", , "loconnel@stanford.edu", role = "aut")
+    )
+Description: Provides colour palettes inspired by the diversity of skin colours in Neotropical poison frogs. Includes discrete and continuous scale palettes representing different species and morphs suitable for use with ggplot2 and base R graphics.
+License: CC0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
+URL: https://laurenoconnelllab.github.io/poisonfrogs/
+Depends: 
+    palettes
+Suggests:
+    ggplot2
