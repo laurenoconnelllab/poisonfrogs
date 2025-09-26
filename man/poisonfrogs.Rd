@@ -4,7 +4,7 @@
 \name{poisonfrogs}
 \alias{poisonfrogs-package}
 \alias{poisonfrogs}
-\title{poisonfrogs: Colour Palettes Inspired by Neotropical Poison Frogs}
+\title{Colour Palettes of Neotropical Poison Frogs}
 \description{
 Provides colour palettes inspired by the enormous diversity of skin colours in Neotropical poison frog species. Suitable for use with ggplot2 and base R graphics.
 }
@@ -12,6 +12,7 @@ Provides colour palettes inspired by the enormous diversity of skin colours in N
 Useful links:
 \itemize{
   \item \url{https://laurenoconnelllab.github.io/poisonfrogs/}
+  \item Report bugs at \url{https://github.com/laurenoconnelllab/poisonfrogs/issues}
 }
 
 }
