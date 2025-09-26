@@ -11,5 +11,3 @@ sticker(
   s_width = .51,
   h_fill = "#A9B4C6"
 )
-
-?sticker

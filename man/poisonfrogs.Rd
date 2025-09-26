@@ -6,6 +6,8 @@
 \alias{poisonfrogs}
 \title{Colour Palettes of Neotropical Poison Frogs}
 \description{
+\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
+
 Provides colour palettes inspired by the enormous diversity of skin colours in Neotropical poison frog species. Suitable for use with ggplot2 and base R graphics.
 }
 \seealso{
