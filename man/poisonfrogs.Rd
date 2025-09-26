@@ -4,14 +4,9 @@
 \name{poisonfrogs}
 \alias{poisonfrogs-package}
 \alias{poisonfrogs}
-\title{poisonfrogs}
+\title{poisonfrogs: Colour Palettes Inspired by Neotropical Poison Frogs}
 \description{
-Provides list of colour palettes inspired by the diversity of skin colours in Neotropical poison frogs. Includes discrete and
-continuous scale palettes representing different species and morphs suitable for use with ggplot2 and base R graphics.
-}
-\details{
-Provides list of colour palettes inspired by the diversity of skin colours in Neotropical poison frogs. Includes discrete and
-continuous scale palettes representing different species and morphs suitable for use with ggplot2 and base R graphics.
+Provides colour palettes inspired by the enormous diversity of skin colours in Neotropical poison frog species. Suitable for use with ggplot2 and base R graphics.
 }
 \seealso{
 Useful links:
@@ -29,4 +24,3 @@ Authors:
 }
 
 }
-\keyword{internal}
