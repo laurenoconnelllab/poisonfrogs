@@ -1,13 +1,14 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# poisonfrogs <img src="man/figures/logo.png" width="160px" align="right" />
+# poisonfrogs <img src="man/figures/logo.png" width="190px" align="right" />
 
 <!-- badges: start -->
 
 <!-- badges: end -->
 
-The goal of poisonfrogs is to …
+`poisonfrogs` is a extensive collection of colour palettes inspired in
+species and morphs of Neotropical poison frogs. And more and more…
 
 ## Installation
 
@@ -16,20 +17,23 @@ You can install the development version of poisonfrogs from
 
 ``` r
 # install.packages("pak")
-pak::pak("laurenoconnelllab/dartPal1")
+pak::pak("laurenoconnelllab/poisonfrogs")
+```
+
+or with:
+
+``` r
+install.packages("poisonfrogs")
+#> Warning: package 'poisonfrogs' is not available for this version of R
+#> 
+#> A version of this package for your version of R might be available elsewhere,
+#> see the ideas at
+#> https://cran.r-project.org/doc/manuals/r-patched/R-admin.html#Installing-packages
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
-
-``` r
-library(poisonfrogs)
-## basic example code
-```
-
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
+I will make nice examples here.
 
 ``` r
 summary(cars)
