@@ -1,19 +1,24 @@
-#' Complete list of poison-frog palettes
+#' Here is the complete list of colour palettes based on poison frogs
 #'
-#' Use [poison_palette()] to construct palettes of desired length.
 #'
 #' @export
-poison_palettes <- palettes::pal_palette(
-  # Replace these with your curated hex sets
-  azureus = c("#0B1D51", "#1F3B99", "#4F7CEB", "#A0B8FF"),
-  terribilis = c("#FFD100", "#333333"),
-  pumilio_bocas = c("#D7191C", "#2C7BB6", "#FDAE61", "#ABD9E9"),
-  histrionica = c("#F7C948", "#1F1F1F", "#E4572E"),
-  leucomelas = c("#FFCC00", "#000000"),
-  anthonyi_sara = c("#006D77", "#83C5BE", "#EDF6F9", "#FFDDD2", "#E29578")
+poison_palettes <- list(
+  ranitomeya1 = c("#2A5D86", "#658C93", "#587F61", "#7F852B", "#4A4B13"),
+  ranitomeya2 = c("#122F51", "#3D5689", "#8E97B5", "#E1C250", "#4D4B13"),
+  ranitomeya3 = c("#538D71", "#3C6B78", "#983E18", "#A26021", "#CFA838"),
+  ossp1 = c("#29211B", "#5D4224", "#8A511B", "#BBA141", "#E5CE64"),
+  ossp2 = c("#432B18", "#712C0F", "#BF5522", "#F1A53A", "#F6C644"),
+  osotokiki = c("#431509", "#862D12", "#D19F36", "#EED95D", "#D0D9D0"),
+  dtalanis = c("#090B0A", "#263F48", "#6A9CB4", "#DAA538", "#CBC664"),
+  dtazureus = c("#282349", "#161C4D", "#163978", "#4268B4", "#869BD7"),
+  pterribilis = c("#42350C", "#6E5006", "#CD9920", "#E1B931", "#EED364"),
+  atrtanimboca = c("#15170E", "#9ACF46", "#E8F649", "#BBE5AE", "#3B95C8"),
+  amacero = c("#14374A", "#3981BE", "#64B936", "#C6E74B", "#7D2A1D"),
+  ahahneli = c("#150F06", "#664B20", "#F5CF49", "#FBF9D9", "#3C696D")
 )
 
-#' A poison-frog palette generator
+
+#' This is the function to generate a colour palette
 #'
 #' These palettes are inspired by the warning colouration of Neotropical
 #' poison frogs. Call this to get a vector of colours you can use in

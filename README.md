@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# poisonfrogs <img src="man/figures/logo.png" width="190px" align="right" />
+# poisonfrogs <img src="man/figures/logo.png" width="220px" align="right" />
 
 <!-- badges: start -->
 
