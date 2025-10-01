@@ -13,5 +13,5 @@ RoxygenNote: 7.3.2
 URL: https://laurenoconnelllab.github.io/poisonfrogs/
 BugReports: https://github.com/laurenoconnelllab/poisonfrogs/issues
 Depends: R (>= 2.10)
-Suggests:
-    ggplot2
+ggplot2
+    
