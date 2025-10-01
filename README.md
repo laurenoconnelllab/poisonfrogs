@@ -20,38 +20,42 @@ You can install the development version of poisonfrogs from
 pak::pak("laurenoconnelllab/poisonfrogs")
 ```
 
-or with:
-
-``` r
-install.packages("poisonfrogs")
-#> Warning: package 'poisonfrogs' is not available for this version of R
-#> 
-#> A version of this package for your version of R might be available elsewhere,
-#> see the ideas at
-#> https://cran.r-project.org/doc/manuals/r-patched/R-admin.html#Installing-packages
-```
-
 ## Example
 
 I will make nice examples here.
 
 ``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
+
+require(tidyverse)
+
+example_data <- tibble(
+  group = factor(rep(c("A", "B", "C", "D", "E"), each = 50)),
+  value = c(
+    rnorm(50, mean = 800, sd = 160), # group A
+    rnorm(50, mean = 600, sd = 90), # group B
+    rnorm(50, mean = 500, sd = 80), # group C
+    rnorm(50, mean = 300, sd = 80), # group D
+    rnorm(50, mean = 270, sd = 80) # group E
+  )
+)
+#discrete scale
+ggplot(example_data, aes(group, value, fill = group)) +
+  geom_boxplot(alpha = 0.9) +
+  theme_classic(base_size = 32, base_line_size = 0.5) +
+  scale_fill_poison(
+    "ranitomeya3",
+    type = "discrete",
+    alpha = 0.95,
+    direction = -1
+  )
 ```
+
+<img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
 
 You’ll still need to render `README.Rmd` regularly, to keep `README.md`
 up-to-date. `devtools::build_readme()` is handy for this.
 
 You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
 
 In that case, don’t forget to commit and push the resulting figure
 files, so they display on GitHub and CRAN.

@@ -27,7 +27,7 @@ set.seed(123) # reproducible
 
 # Create dummy data
 
-dummy_data <- tibble(
+example_data <- tibble(
   group = factor(rep(c("A", "B", "C", "D", "E"), each = 50)),
   value = c(
     rnorm(50, mean = 800, sd = 160), # group A
@@ -38,11 +38,11 @@ dummy_data <- tibble(
   )
 )
 #discrete scale
-ggplot(dummy_data, aes(group, value, fill = group)) +
+ggplot(example_data, aes(group, value, fill = group)) +
   geom_boxplot(alpha = 0.9) +
   theme_classic(base_size = 32, base_line_size = 0.5) +
   scale_fill_poison(
-    "ranitomeya3",
+    "ahahneli",
     type = "discrete",
     alpha = 0.95,
     direction = -1
