@@ -53,52 +53,416 @@
 <div class="row">
   <main id="main" class="col-md-9"><div class="section level1">
 <div class="page-header">
-<img src="logo.png" class="logo" alt=""><h1 id="poisonfrogs-">poisonfrogs <a class="anchor" aria-label="anchor" href="#poisonfrogs-"></a>
+<img src="logo.png" class="logo" alt=""><h1 id="poisonfrogs-color-palettes-inspired-in-neotropical-poison-frogs-">poisonfrogs: Color palettes inspired in Neotropical poison frogs <a class="anchor" aria-label="anchor" href="#poisonfrogs-color-palettes-inspired-in-neotropical-poison-frogs-"></a>
 </h1>
 </div>
 <!-- badges: start -->
 <!-- badges: end -->
-<p><code>poisonfrogs</code> is a extensive collection of colour palettes inspired in species and morphs of Neotropical poison frogs. And more and more…</p>
+<p><code>poisonfrogs</code> is a extensive collection of 31 colour palettes inspired in Neotropical poison frogs. With more than 200 brighly colored species, Neotropical poison frogs paint the rain forest in vivid hues that shout a clear message: “I’m toxic!”. Spice up your plots with <code>poisonfrogs</code> and give your dataviz a toxic twist! But wait, we also included few color palettes inspired on other pretty frog species, because… why not?</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<p>You can install the development version of poisonfrogs from <a href="https://github.com/" class="external-link">GitHub</a> with:</p>
+<p>You can install <code>poisonfrogs</code> for now using the <strong>poisonfrogs_1.0.0.tar.gz</strong> file (from CRAN later after release):</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># install.packages("pak")</span></span>
-<span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"laurenoconnelllab/poisonfrogs"</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"poisonfrogs_1.0.0.tar.gz"</span>, repos <span class="op">=</span> <span class="cn">NULL</span>, type <span class="op">=</span> <span class="st">"source"</span><span class="op">)</span></span></code></pre></div>
+<p>load the package:</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://laurenoconnelllab.github.io/poisonfrogs/">poisonfrogs</a></span><span class="op">)</span></span></code></pre></div>
+<p>or from the development version in <a href="https://github.com/laurenoconnelllab/poisonfrogs" class="external-link">GitHub</a> with:</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"laurenoconnelllab/poisonfrogs"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
-<h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
+<h2 id="poison-frog-color-palettes-at-a-glance">Poison frog color palettes “<em>At a glance</em>”<a class="anchor" aria-label="anchor" href="#poison-frog-color-palettes-at-a-glance"></a>
 </h2>
-<p>I will make nice examples here.</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<p><img src="reference/figures/Mosaic_all.png"></p>
+</div>
+<div class="section level2">
+<h2 id="meet-the-frogs-and-their-colors">Meet the frogs and their colors<a class="anchor" aria-label="anchor" href="#meet-the-frogs-and-their-colors"></a>
+</h2>
+</div>
+<div class="section level2">
+<h2 id="allobates-femoralis">
+<em>Allobates femoralis</em><a class="anchor" aria-label="anchor" href="#allobates-femoralis"></a>
+</h2>
+<p><img src="reference/figures/Afemoralis.png">Inspired after the brilliant-thighed poison frog, <em>Allobates femoralis</em>, from the Nouragues rainforest in French Guiana.</p>
+</div>
+<div class="section level2">
+<h2 id="andinobates-fulguritus">
+<em>Andinobates fulguritus</em><a class="anchor" aria-label="anchor" href="#andinobates-fulguritus"></a>
+</h2>
+<p><img src="reference/figures/Afulguritus.png">Inspired after the Yellow-bellied poison frog, <em>Andinobates fulguritus</em>, from the Pacífic rainforest in Colombia.</p>
+</div>
+<div class="section level2">
+<h2 id="andinobates-minutus">
+<em>Andinobates minutus</em><a class="anchor" aria-label="anchor" href="#andinobates-minutus"></a>
+</h2>
+<p><img src="reference/figures/Aminutus.png">Inspired after the Blue-bellied poison frog, <em>Andinobates minutus</em>, from the Pacífic rainforest in Colombia.</p>
+</div>
+<div class="section level2">
+<h2 id="ameerega-macero">
+<em>Ameerega macero</em><a class="anchor" aria-label="anchor" href="#ameerega-macero"></a>
+</h2>
+<p><img src="reference/figures/Amacero.png">Inspired after the Blue-bellied poison frog, <em>Andinobates minutus</em>, from the Pacífic rainforest in Colombia.</p>
+</div>
+<div class="section level2">
+<h2 id="ameerega-shihuemoy">
+<em>Ameerega shihuemoy</em><a class="anchor" aria-label="anchor" href="#ameerega-shihuemoy"></a>
+</h2>
+<p><img src="reference/figures/Ashihuemoy.png">Inspired after the Amarakaeri poison frog, <em>Ameerega shihuemoy</em>, from the Peruvian rainforest in the Manú district.</p>
+</div>
+<div class="section level2">
+<h2 id="ameerega-trivittata">
+<em>Ameerega trivittata</em><a class="anchor" aria-label="anchor" href="#ameerega-trivittata"></a>
+</h2>
+<p><img src="reference/figures/Atrivittata.png"> Inspired after the three-striped poison frog, <em>Ameerega trivittata</em>, from the Amazon rainforest of the Tanimboca reserve, Colombia.</p>
+</div>
+<div class="section level2">
+<h2 id="dendrobates-auratus">
+<em>Dendrobates auratus</em><a class="anchor" aria-label="anchor" href="#dendrobates-auratus"></a>
+</h2>
+<p><img src="reference/figures/Dauratus.png"> Inspired after the three-striped poison frog, <em>Dendrobates auratus</em>, from the Pacífic rainforest in Colombia.</p>
+</div>
+<div class="section level2">
+<h2 id="dendrobates-tinctorius-alanis">
+<em>Dendrobates tinctorius “alanis”</em><a class="anchor" aria-label="anchor" href="#dendrobates-tinctorius-alanis"></a>
+</h2>
+<p><img src="reference/figures/Dtalanis.png"> Inspired after the Dyeing poison frog, <em>Dendrobates tinctorius “alanis”</em>, from the Nouragues rainforest in French Guiana.</p>
+</div>
+<div class="section level2">
+<h2 id="dendrobates-tinctorius-azureus">
+<em>Dendrobates tinctorius “azureus”</em><a class="anchor" aria-label="anchor" href="#dendrobates-tinctorius-azureus"></a>
+</h2>
+<p><img src="reference/figures/Dtazureus.png"> Inspired after the Blue poison frog, <em>Dendrobates tinctorius “azureus”</em>, from the rainforest in Suthern Surinam.</p>
+</div>
+<div class="section level2">
+<h2 id="epipedobates-anthonyi">
+<em>Epipedobates anthonyi</em><a class="anchor" aria-label="anchor" href="#epipedobates-anthonyi"></a>
+</h2>
+<p><img src="reference/figures/Eanthonyi.png"> Inspired after the Anthony’s poison frog, <em>Epipedobates anthonyi</em>, from the rainforest in Ecuador and Perú.</p>
+</div>
+<div class="section level2">
+<h2 id="epipedobates-darwinwallacei">
+<em>Epipedobates darwinwallacei</em><a class="anchor" aria-label="anchor" href="#epipedobates-darwinwallacei"></a>
+</h2>
+<p><img src="reference/figures/Edarwinwallacei.png"> Inspired after the Darwin-Wallace poison frog, <em>Epipedobates darwinwallacei</em>, from the rainforest in Ecuador.</p>
+</div>
+<div class="section level2">
+<h2 id="epipedobates-tricolor">
+<em>Epipedobates tricolor</em><a class="anchor" aria-label="anchor" href="#epipedobates-tricolor"></a>
+</h2>
+<p><img src="reference/figures/Etricolor.png"> Inspired after the phantasmal poison frog, <em>Epipedobates tricolor</em>, from the rainforest in Ecuador.</p>
+</div>
+<div class="section level2">
+<h2 id="oophaga-anchicayensis">
+<em>Oophaga anchicayensis</em><a class="anchor" aria-label="anchor" href="#oophaga-anchicayensis"></a>
+</h2>
+<p><img src="reference/figures/Oanchicayensis.png"> Inspired after the Anchicayá poison frog, <em>Oophaga anchicayensis</em>, from the rainforest in western Colombia.</p>
+</div>
+<div class="section level2">
+<h2 id="oophaga-histrionica">
+<em>Oophaga histrionica</em><a class="anchor" aria-label="anchor" href="#oophaga-histrionica"></a>
+</h2>
+<p><img src="reference/figures/Ohistrionica.png"> Inspired after the harlequin poison frog, <em>Oophaga histrionica</em>, from the rainforest in western Colombia.</p>
+</div>
+<div class="section level2">
+<h2 id="oophaga-lehmanni">
+<em>Oophaga lehmanni</em><a class="anchor" aria-label="anchor" href="#oophaga-lehmanni"></a>
+</h2>
+<p><img src="reference/figures/Olehmanni.png"> Inspired after the Lehmann’s poison frog, <em>Oophaga lehmanni</em>, from the rainforest in western Colombia.</p>
+</div>
+<div class="section level2">
+<h2 id="oophaga-pumilio-bluejeans">
+<em>Oophaga pumilio “bluejeans”</em><a class="anchor" aria-label="anchor" href="#oophaga-pumilio-bluejeans"></a>
+</h2>
+<p><img src="reference/figures/Opbluejeans.png"> Inspired after the strawberry poison frog, <em>Oophaga pumilio “bluejeans”</em>, from the rainforest in Central America.</p>
+</div>
+<div class="section level2">
+<h2 id="oophaga-pumilio-colón">
+<em>Oophaga pumilio “colón”</em><a class="anchor" aria-label="anchor" href="#oophaga-pumilio-col%C3%B3n"></a>
+</h2>
+<p><img src="reference/figures/Opcolon.png"> Inspired after the strawberry poison frog, <em>Oophaga pumilio “colón”</em>, from the Isla Colón in Bocas del Toro, Panamá.</p>
+</div>
+<div class="section level2">
+<h2 id="oophaga-pumilio-escudo">
+<em>Oophaga pumilio “escudo”</em><a class="anchor" aria-label="anchor" href="#oophaga-pumilio-escudo"></a>
+</h2>
+<p><img src="reference/figures/Opescudo.png"> Inspired after the strawberry poison frog, <em>Oophaga pumilio “escudo”</em>, from the Isla Escudo de Veraguas in Bocas del Toro, Panamá.</p>
+</div>
+<div class="section level2">
+<h2 id="oophaga-pumilio-loma">
+<em>Oophaga pumilio “loma”</em><a class="anchor" aria-label="anchor" href="#oophaga-pumilio-loma"></a>
+</h2>
+<p><img src="reference/figures/Oploma.png"> Inspired after the strawberry poison frog, <em>Oophaga pumilio “loma”</em>, from the Isla Loma Partida in Bocas del Toro, Panamá.</p>
+</div>
+<div class="section level2">
+<h2 id="oophaga-pumilio-sancristobal">
+<em>Oophaga pumilio “sancristobal”</em><a class="anchor" aria-label="anchor" href="#oophaga-pumilio-sancristobal"></a>
+</h2>
+<p><img src="reference/figures/Opsancristobal.png"> Inspired after the strawberry poison frog, <em>Oophaga pumilio “sancristobal”</em>, from the Isla San Cristóbal in Bocas del Toro, Panamá.</p>
+</div>
+<div class="section level2">
+<h2 id="oophaga-pumilio-uyama">
+<em>Oophaga pumilio “uyama”</em><a class="anchor" aria-label="anchor" href="#oophaga-pumilio-uyama"></a>
+</h2>
+<p><img src="reference/figures/Opuyama.png"> Inspired after the strawberry poison frog, <em>Oophaga pumilio “uyama”</em>, from the Río Uyama in Bocas del Toro, Panamá.</p>
+</div>
+<div class="section level2">
+<h2 id="oophaga-sylvatica-colón">
+<em>Oophaga sylvatica “colón”</em><a class="anchor" aria-label="anchor" href="#oophaga-sylvatica-col%C3%B3n"></a>
+</h2>
+<p><img src="reference/figures/Oscolon.png"> Inspired after the little devil poison frog, <em>Oophaga sylvatica “colón”</em>, from the Cristobal Colón population in Ecuador.</p>
+</div>
+<div class="section level2">
+<h2 id="oophaga-sylvatica-koi">
+<em>Oophaga sylvatica “koi”</em><a class="anchor" aria-label="anchor" href="#oophaga-sylvatica-koi"></a>
+</h2>
+<p><img src="reference/figures/Oskoi.png"> Inspired after the little devil poison frog, <em>Oophaga sylvatica “koi”</em>, from the “koi” population in Nariño, Colombia.</p>
+</div>
+<div class="section level2">
+<h2 id="oophaga-sylvatica-lita">
+<em>Oophaga sylvatica “lita”</em><a class="anchor" aria-label="anchor" href="#oophaga-sylvatica-lita"></a>
+</h2>
+<p><img src="reference/figures/Oslita.png"> Inspired after the little devil poison frog, <em>Oophaga sylvatica “lita”</em>, from the Lita population in Ecuador.</p>
+</div>
+<div class="section level2">
+<h2 id="oophaga-sylvatica-otokiki">
+<em>Oophaga sylvatica “otokiki”</em><a class="anchor" aria-label="anchor" href="#oophaga-sylvatica-otokiki"></a>
+</h2>
+<p><img src="reference/figures/Osotokiki.png"> Inspired after the little devil poison frog, <em>Oophaga sylvatica “otokiki”</em>, from the Otokiki population in Ecuador.</p>
+</div>
+<div class="section level2">
+<h2 id="oophaga-sylvatica-sanantonio">
+<em>Oophaga sylvatica “sanantonio”</em><a class="anchor" aria-label="anchor" href="#oophaga-sylvatica-sanantonio"></a>
+</h2>
+<p><img src="reference/figures/Ossanantonio.png"> Inspired after the little devil poison frog, <em>Oophaga sylvatica “sanantonio”</em>, from the San Antonio population in Ecuador.</p>
+</div>
+<div class="section level2">
+<h2 id="oophaga-sylvatica-sp1">
+<em>Oophaga sylvatica “sp1”</em><a class="anchor" aria-label="anchor" href="#oophaga-sylvatica-sp1"></a>
+</h2>
+<p><img src="reference/figures/Ossp1.png"> Inspired after the little devil poison frog, <em>Oophaga sylvatica “sp1”</em>, from the sp1 population in Ecuador.</p>
+</div>
+<div class="section level2">
+<h2 id="phyllobates-terribilis">
+<em>Phyllobates terribilis</em><a class="anchor" aria-label="anchor" href="#phyllobates-terribilis"></a>
+</h2>
+<p><img src="reference/figures/Pterribilis.png"> Inspired after the golden poison frog, <em>Phyllobates terribilis</em>, from the rainforest in Cauca, Colombia.</p>
+</div>
+<div class="section level2">
+<h2 id="ranitomeya-amazonica">
+<em>Ranitomeya amazonica</em><a class="anchor" aria-label="anchor" href="#ranitomeya-amazonica"></a>
+</h2>
+<p><img src="reference/figures/Ramazonica.png"> Inspired after the Amazonian poison frog, <em>Ranitomeya amazonica</em>, from the Amazon rainforest of the Tanimboca reserve, Colombia.</p>
+</div>
+<div class="section level2">
+<h2 id="ranitomeya-imitator-striped">
+<em>Ranitomeya imitator “striped”</em><a class="anchor" aria-label="anchor" href="#ranitomeya-imitator-striped"></a>
+</h2>
+<p><img src="reference/figures/Ristriped.png"> Inspired after the mimic poison frog, <em>Ranitomeya imitator “striped”</em>, from the rainforest in Perú.</p>
+</div>
+<div class="section level2">
+<h2 id="ranitomeya-imitator-banded">
+<em>Ranitomeya imitator “banded”</em><a class="anchor" aria-label="anchor" href="#ranitomeya-imitator-banded"></a>
+</h2>
+<p><img src="reference/figures/Ribanded.png"> Inspired after the mimic poison frog, <em>Ranitomeya imitator “banded”</em>, from the rainforest in Perú.</p>
+</div>
+<div class="section level2">
+<h2 id="ranitomeya-variabilis">
+<em>Ranitomeya variabilis</em><a class="anchor" aria-label="anchor" href="#ranitomeya-variabilis"></a>
+</h2>
+<p><img src="reference/figures/Rvariabilis.png"> Inspired after the Zimmerman’s poison frog, <em>Ranitomeya variabilis</em>, from the rainforest in Perú.</p>
+</div>
+<div class="section level2">
+<h2 id="other-frog-species">Other frog species<a class="anchor" aria-label="anchor" href="#other-frog-species"></a>
+</h2>
+</div>
+<div class="section level2">
+<h2 id="boana-picturata">
+<em>Boana picturata</em><a class="anchor" aria-label="anchor" href="#boana-picturata"></a>
+</h2>
+<p><img src="reference/figures/Bpicturata.png"> Inspired after the Imbabura tree frog, <em>Boana picturata</em>, from the Pacific lowlands in Colombia and Ecuador.</p>
+</div>
+<div class="section level2">
+<h2 id="dendropsophus-sarayacuensis">
+<em>Dendropsophus sarayacuensis</em><a class="anchor" aria-label="anchor" href="#dendropsophus-sarayacuensis"></a>
+</h2>
+<p><img src="reference/figures/Dsarayacuensis.png"> Inspired after the Shreve’s Sarayacu tree frog, <em>Dendropsophus sarayacuensis</em>, from the Amazon rainforest of the Tanimboca reserve, Colombia.</p>
+</div>
+<div class="section level2">
+<h2 id="hypsiboas-cinerascens">
+<em>Hypsiboas cinerascens</em><a class="anchor" aria-label="anchor" href="#hypsiboas-cinerascens"></a>
+</h2>
+<p><img src="reference/figures/Hcinerascens.png"> Inspired after the Demerara Falls tree frog, <em>Hypsiboas cinerascens</em>, from the Amazon rainforest of the Tanimboca reserve, Colombia.</p>
+</div>
+<div class="section level2">
+<h2 id="hypsiboas-hobbsi">
+<em>Hypsiboas hobbsi</em><a class="anchor" aria-label="anchor" href="#hypsiboas-hobbsi"></a>
+</h2>
+<p><img src="reference/figures/Hhobbsi.png"> Inspired after the Hobbs’ tree frog, <em>Hypsiboas hobbsi</em>, from the Amazon rainforest of the Tanimboca reserve, Colombia.</p>
+</div>
+<div class="section level2">
+<h2 id="hyalinobatrachium-fleischmanni">
+<em>Hyalinobatrachium fleischmanni</em><a class="anchor" aria-label="anchor" href="#hyalinobatrachium-fleischmanni"></a>
+</h2>
+<p><img src="reference/figures/Hfleischmanni.png"> Inspired after the Fleischmann’s glass frog, <em>Hyalinobatrachium fleischmanni</em>, from the rainforest in Ecuador.</p>
+</div>
+<div class="section level2">
+<h2 id="lithodythes-lineatus">
+<em>Lithodythes lineatus</em><a class="anchor" aria-label="anchor" href="#lithodythes-lineatus"></a>
+</h2>
+<p><img src="reference/figures/Llineatus.png"> Inspired after the Gold-striped frog, <em>Lithodythes lineatus</em>, from the Amazon rainforest of the Tanimboca reserve, Colombia.</p>
+</div>
+<div class="section level2">
+<h2 id="mantela-laevigata">
+<em>Mantela laevigata</em><a class="anchor" aria-label="anchor" href="#mantela-laevigata"></a>
+</h2>
+<p><img src="reference/figures/Mlaevigata.png"> Inspired after the climbing mantella, <em>Mantela laevigata</em>, from subtropical forest in Madagascar.</p>
+</div>
+<div class="section level2">
+<h2 id="phyllomedusa-tomopterna">
+<em>Phyllomedusa tomopterna</em><a class="anchor" aria-label="anchor" href="#phyllomedusa-tomopterna"></a>
+</h2>
+<p><img src="reference/figures/Ptomopterna.png"> Inspired after the tiger-striped tree frog, <em>Phyllomedusa tomopterna</em>, from the Amazon rainforest of the Tanimboca reserve, Colombia.</p>
+</div>
+<div class="section level2">
+<h2 id="phyllomedusa-vaillantii">
+<em>Phyllomedusa vaillantii</em><a class="anchor" aria-label="anchor" href="#phyllomedusa-vaillantii"></a>
+</h2>
+<p><img src="reference/figures/Pvaillantii.png"> Inspired after the white-lined leaf frog, <em>Phyllomedusa vaillantii</em>, from the Amazon rainforest of the Tanimboca reserve, Colombia.</p>
+</div>
+<div class="section level2">
+<h2 id="rhinella-marina">
+<em>Rhinella marina</em><a class="anchor" aria-label="anchor" href="#rhinella-marina"></a>
+</h2>
+<p><img src="reference/figures/Rmarina.png"> Inspired after the cane toad, <em>Rhinella marina</em>, from the Nouragues rainforest in French Guiana.</p>
+</div>
+<div class="section level2">
+<h2 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
+</h2>
+<p>To call the names of all the xyz colour palettes in poisonfrogs:</p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="reference/poison_palettes_names.html">poison_palettes_names</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="co">#&gt;  [1] "Afemoralis"      "Afulguritus"     "Amacero"         "Aminutus"       </span></span>
+<span><span class="co">#&gt;  [5] "Ashihuemoy"      "Atrivittata"     "Bpicturata"      "Dauratus"       </span></span>
+<span><span class="co">#&gt;  [9] "Dsarayacuensis"  "Dtalanis"        "Dtazureus"       "Eanthonyi"      </span></span>
+<span><span class="co">#&gt; [13] "Edarwinwallacei" "Etricolor"       "Hcinerascens"    "Hfleischmanni"  </span></span>
+<span><span class="co">#&gt; [17] "Hhobbsi"         "Llineatus"       "Mlaevigata"      "Oanchicayensis" </span></span>
+<span><span class="co">#&gt; [21] "Ohistrionica"    "Olehmanni"       "Opbluejeans"     "Opcolon"        </span></span>
+<span><span class="co">#&gt; [25] "Opescudo"        "Oploma"          "Opsancristobal"  "Opuyama"        </span></span>
+<span><span class="co">#&gt; [29] "Oscolon"         "Oskoi"           "Oslita"          "Osotokiki"      </span></span>
+<span><span class="co">#&gt; [33] "Ossanantonio"    "Ossp1"           "Pterribilis"     "Ptomopterna"    </span></span>
+<span><span class="co">#&gt; [37] "Pvaillantii"     "Ramazonica"      "Ribanded"        "Ristriped"      </span></span>
+<span><span class="co">#&gt; [41] "Rmarina"         "Rvariabilis"</span></span></code></pre></div>
+<p>Plot poison frog palettes and print the hex codes of the colours in every palette:</p>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># plot palette with hex codes</span></span>
+<span><span class="fu"><a href="reference/poison_palette.html">poison_palette</a></span><span class="op">(</span><span class="st">"Hfleischmanni"</span><span class="op">)</span></span></code></pre></div>
+<p><img src="reference/figures/README-unnamed-chunk-6-1.png" width="100%"></p>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span></span>
+<span><span class="co"># get hex codes for a vector</span></span>
+<span><span class="va">cols</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/poison_palette.html">poison_palette</a></span><span class="op">(</span><span class="st">"Dtalanis"</span>, return <span class="op">=</span> <span class="st">"vector"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">cols</span></span>
+<span><span class="co">#&gt; [1] "#090B0A" "#263F48" "#499AC1" "#EEA715" "#FED126"</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="examples">Examples<a class="anchor" aria-label="anchor" href="#examples"></a>
+</h2>
+<div class="section level3">
+<h3 id="continuos-scale">Continuos scale<a class="anchor" aria-label="anchor" href="#continuos-scale"></a>
+</h3>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org" class="external-link">tidyverse</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="va"><a href="https://github.com/jennybc/gapminder" class="external-link">gapminder</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="va">gridExtra</span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="va"><a href="https://wilkelab.org/ggridges/" class="external-link">ggridges</a></span><span class="op">)</span></span>
 <span></span>
-<span><span class="va">example_data</span> <span class="op">&lt;-</span> <span class="fu">tibble</span><span class="op">(</span></span>
-<span>  group <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">factor</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/rep.html" class="external-link">rep</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>, <span class="st">"D"</span>, <span class="st">"E"</span><span class="op">)</span>, each <span class="op">=</span> <span class="fl">50</span><span class="op">)</span><span class="op">)</span>,</span>
-<span>  value <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span></span>
-<span>    <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html" class="external-link">rnorm</a></span><span class="op">(</span><span class="fl">50</span>, mean <span class="op">=</span> <span class="fl">800</span>, sd <span class="op">=</span> <span class="fl">160</span><span class="op">)</span>, <span class="co"># group A</span></span>
-<span>    <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html" class="external-link">rnorm</a></span><span class="op">(</span><span class="fl">50</span>, mean <span class="op">=</span> <span class="fl">600</span>, sd <span class="op">=</span> <span class="fl">90</span><span class="op">)</span>, <span class="co"># group B</span></span>
-<span>    <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html" class="external-link">rnorm</a></span><span class="op">(</span><span class="fl">50</span>, mean <span class="op">=</span> <span class="fl">500</span>, sd <span class="op">=</span> <span class="fl">80</span><span class="op">)</span>, <span class="co"># group C</span></span>
-<span>    <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html" class="external-link">rnorm</a></span><span class="op">(</span><span class="fl">50</span>, mean <span class="op">=</span> <span class="fl">300</span>, sd <span class="op">=</span> <span class="fl">80</span><span class="op">)</span>, <span class="co"># group D</span></span>
-<span>    <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html" class="external-link">rnorm</a></span><span class="op">(</span><span class="fl">50</span>, mean <span class="op">=</span> <span class="fl">270</span>, sd <span class="op">=</span> <span class="fl">80</span><span class="op">)</span> <span class="co"># group E</span></span>
-<span>  <span class="op">)</span></span>
+<span><span class="co">#continuous scale</span></span>
+<span></span>
+<span><span class="va">df_nottem</span> <span class="op">&lt;-</span> <span class="fu">tibble</span><span class="op">(</span></span>
+<span>  year  <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">floor</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/time.html" class="external-link">time</a></span><span class="op">(</span><span class="va">nottem</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>  month <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">factor</a></span><span class="op">(</span><span class="va">month.abb</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/stats/time.html" class="external-link">cycle</a></span><span class="op">(</span><span class="va">nottem</span><span class="op">)</span><span class="op">]</span>, levels <span class="op">=</span> <span class="va">month.abb</span><span class="op">)</span>,</span>
+<span>  temp  <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/numeric.html" class="external-link">as.numeric</a></span><span class="op">(</span><span class="va">nottem</span><span class="op">)</span></span>
 <span><span class="op">)</span></span>
-<span><span class="co">#discrete scale</span></span>
-<span><span class="fu">ggplot</span><span class="op">(</span><span class="va">example_data</span>, <span class="fu">aes</span><span class="op">(</span><span class="va">group</span>, <span class="va">value</span>, fill <span class="op">=</span> <span class="va">group</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">geom_boxplot</span><span class="op">(</span>alpha <span class="op">=</span> <span class="fl">0.9</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">theme_classic</span><span class="op">(</span>base_size <span class="op">=</span> <span class="fl">32</span>, base_line_size <span class="op">=</span> <span class="fl">0.5</span><span class="op">)</span> <span class="op">+</span></span>
+<span></span>
+<span><span class="va">p1</span> <span class="op">&lt;-</span> <span class="fu">ggplot</span><span class="op">(</span><span class="va">df_nottem</span>, <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">temp</span>, y <span class="op">=</span> <span class="va">month</span>, fill <span class="op">=</span> <span class="fu">after_stat</span><span class="op">(</span><span class="va">x</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">geom_density_ridges_gradient</span><span class="op">(</span>scale <span class="op">=</span> <span class="fl">2</span>, rel_min_height <span class="op">=</span> <span class="fl">0.01</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="reference/scale_fill_poison.html">scale_fill_poison</a></span><span class="op">(</span></span>
-<span>    <span class="st">"ranitomeya3"</span>,</span>
+<span>    name <span class="op">=</span> <span class="st">"Oskoi"</span>,</span>
+<span>    type <span class="op">=</span> <span class="st">"continuous"</span>,</span>
+<span>    alpha <span class="op">=</span> <span class="fl">0.95</span>,</span>
+<span>    direction <span class="op">=</span> <span class="op">-</span><span class="fl">1</span></span>
+<span>  <span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">labs</span><span class="op">(</span></span>
+<span>  fill <span class="op">=</span> <span class="st">"ºF"</span>,</span>
+<span>  y <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  x <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">theme_classic</span><span class="op">(</span>base_size <span class="op">=</span> <span class="fl">20</span>, base_line_size <span class="op">=</span> <span class="fl">0.5</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">theme</span><span class="op">(</span>legend.position <span class="op">=</span> <span class="st">"right"</span>, legend.justification <span class="op">=</span> <span class="st">"left"</span>,</span>
+<span>  legend.margin <span class="op">=</span> <span class="fu">margin</span><span class="op">(</span><span class="fl">0</span>,<span class="fl">0</span>,<span class="fl">0</span>,<span class="fl">0</span><span class="op">)</span>,</span>
+<span>  legend.box.margin <span class="op">=</span> <span class="fu">margin</span><span class="op">(</span><span class="op">-</span><span class="fl">5</span>,<span class="op">-</span><span class="fl">5</span>,<span class="op">-</span><span class="fl">5</span>,<span class="op">-</span><span class="fl">5</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">coord_cartesian</span><span class="op">(</span>clip <span class="op">=</span> <span class="st">"off"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">p1</span></span></code></pre></div>
+<p><img src="reference/figures/README-unnamed-chunk-7-1.png" width="100%"></p>
+</div>
+<div class="section level3">
+<h3 id="discrete-scale-1">Discrete scale 1<a class="anchor" aria-label="anchor" href="#discrete-scale-1"></a>
+</h3>
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span></span>
+<span><span class="co">#discrete scale 1</span></span>
+<span><span class="va">p2</span> <span class="op">&lt;-</span> <span class="fu">ggplot</span><span class="op">(</span><span class="va">gapminder</span>, <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">continent</span>, y <span class="op">=</span> <span class="va">lifeExp</span>, fill <span class="op">=</span> <span class="va">continent</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">geom_boxplot</span><span class="op">(</span>alpha <span class="op">=</span> <span class="fl">0.95</span>, outliers <span class="op">=</span> <span class="cn">F</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">geom_jitter</span><span class="op">(</span></span>
+<span>    shape <span class="op">=</span> <span class="fl">21</span>,</span>
+<span>    position <span class="op">=</span> <span class="fu">position_jitter</span><span class="op">(</span><span class="fl">0.1</span><span class="op">)</span>,</span>
+<span>    alpha <span class="op">=</span> <span class="fl">0.2</span>,</span>
+<span>    size <span class="op">=</span> <span class="fl">0.8</span>,</span>
+<span>    bg <span class="op">=</span> <span class="st">"grey"</span></span>
+<span>  <span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">stat_summary</span><span class="op">(</span></span>
+<span>    fun <span class="op">=</span> <span class="va">mean</span>,</span>
+<span>    geom <span class="op">=</span> <span class="st">"point"</span>,</span>
+<span>    size <span class="op">=</span> <span class="fl">1.5</span>,</span>
+<span>    color <span class="op">=</span> <span class="st">"black"</span>,</span>
+<span>    alpha <span class="op">=</span> <span class="fl">0.6</span></span>
+<span>  <span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">theme_classic</span><span class="op">(</span>base_size <span class="op">=</span> <span class="fl">20</span>, base_line_size <span class="op">=</span> <span class="fl">0.5</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="reference/scale_fill_poison.html">scale_fill_poison</a></span><span class="op">(</span></span>
+<span>    name <span class="op">=</span> <span class="st">"Opcolon"</span>,</span>
 <span>    type <span class="op">=</span> <span class="st">"discrete"</span>,</span>
 <span>    alpha <span class="op">=</span> <span class="fl">0.95</span>,</span>
 <span>    direction <span class="op">=</span> <span class="op">-</span><span class="fl">1</span></span>
-<span>  <span class="op">)</span></span></code></pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-2-1.png" width="100%"></p>
-<p>You’ll still need to render <code>README.Rmd</code> regularly, to keep <code>README.md</code> up-to-date. <code>devtools::build_readme()</code> is handy for this.</p>
-<p>You can also embed plots, for example:</p>
-<p>In that case, don’t forget to commit and push the resulting figure files, so they display on GitHub and CRAN.</p>
+<span>  <span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">theme</span><span class="op">(</span>legend.position <span class="op">=</span> <span class="st">"none"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">xlab</span><span class="op">(</span><span class="cn">NULL</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">ylab</span><span class="op">(</span><span class="st">"Life Expentancy"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">p2</span></span></code></pre></div>
+<p><img src="reference/figures/README-unnamed-chunk-8-1.png" width="100%"></p>
+</div>
+<div class="section level3">
+<h3 id="discrete-scale-2">Discrete scale 2<a class="anchor" aria-label="anchor" href="#discrete-scale-2"></a>
+</h3>
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co">#discrete scale 2</span></span>
+<span><span class="va">p3</span> <span class="op">&lt;-</span> <span class="fu">ggplot</span><span class="op">(</span><span class="va">gapminder</span>, <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">lifeExp</span>, y <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="va">gdpPercap</span><span class="op">)</span>, colour <span class="op">=</span> <span class="va">continent</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">geom_point</span><span class="op">(</span>alpha <span class="op">=</span> <span class="fl">0.2</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="reference/scale_colour_poison.html">scale_colour_poison</a></span><span class="op">(</span>name <span class="op">=</span> <span class="st">"Ashihuemoy"</span>, type <span class="op">=</span> <span class="st">"discrete"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">stat_smooth</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">facet_wrap</span><span class="op">(</span><span class="va">.</span><span class="op">~</span><span class="va">continent</span>, scales <span class="op">=</span> <span class="st">"free"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">theme_minimal</span><span class="op">(</span><span class="fl">20</span>, base_line_size <span class="op">=</span> <span class="fl">0.2</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">theme</span><span class="op">(</span>legend.position <span class="op">=</span> <span class="st">"none"</span>,</span>
+<span>  strip.background <span class="op">=</span> <span class="fu">element_blank</span><span class="op">(</span><span class="op">)</span>, strip.placement <span class="op">=</span> <span class="st">"outside"</span><span class="op">)</span> </span>
+<span></span>
+<span><span class="va">p3</span></span></code></pre></div>
+<p><img src="reference/figures/README-unnamed-chunk-9-1.png" width="100%"></p>
+</div>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="links">

@@ -61,7 +61,7 @@ gradient with <code><a href="https://ggplot2.tidyverse.org/reference/scale_gradi
 
 <dl><dt id="arg-name">name<a class="anchor" aria-label="anchor" href="#arg-name"></a></dt>
 <dd><p>Character. Name of the poison-frog palette to use
-(must exist in your internal <code>poison_palettes</code> registry).</p></dd>
+(see <code>poison_palette_names</code>).</p></dd>
 
 
 <dt id="arg-type">type<a class="anchor" aria-label="anchor" href="#arg-type"></a></dt>
@@ -90,23 +90,60 @@ transparency to all colours (both discrete and continuous modes).</p></dd>
     </div>
     <div class="section level2">
     <h2 id="see-also">See also<a class="anchor" aria-label="anchor" href="#see-also"></a></h2>
-    <div class="dont-index"><p><code><a href="scale_colour_poison.html">scale_colour_poison()</a></code>, <code><a href="poison_palette.html">poison_palette()</a></code>, <code>poison_pal()</code>, <code><a href="show_poison.html">show_poison()</a></code></p></div>
+    <div class="dont-index"><p><code><a href="scale_colour_poison.html">scale_colour_poison()</a></code>, <code><a href="poison_palette.html">poison_palette()</a></code>, <code>poison_pal()</code></p></div>
     </div>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span> <span class="co"># \dontrun{</span></span></span>
 <span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/jennybc/gapminder" class="external-link">gapminder</a></span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Discrete example</span></span></span>
-<span class="r-in"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">mpg</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span><span class="va">class</span>, fill <span class="op">=</span> <span class="va">drv</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span></span>
-<span class="r-in"><span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html" class="external-link">geom_bar</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span></span>
-<span class="r-in"><span>  <span class="fu">scale_fill_poison</span><span class="op">(</span><span class="st">"O_sylvatica_S"</span>, type <span class="op">=</span> <span class="st">"discrete"</span>, alpha <span class="op">=</span> <span class="fl">0.95</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">gapminder</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">continent</span>, y <span class="op">=</span> <span class="va">lifeExp</span>, fill <span class="op">=</span> <span class="va">continent</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_violin.html" class="external-link">geom_violin</a></span><span class="op">(</span>trim <span class="op">=</span> <span class="cn">FALSE</span>, alpha <span class="op">=</span> <span class="fl">0.75</span><span class="op">)</span> <span class="op">+</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_jitter.html" class="external-link">geom_jitter</a></span><span class="op">(</span></span></span>
+<span class="r-in"><span> shape <span class="op">=</span> <span class="fl">21</span>,</span></span>
+<span class="r-in"><span> position <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/position_jitter.html" class="external-link">position_jitter</a></span><span class="op">(</span><span class="fl">0.1</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span> alpha <span class="op">=</span> <span class="fl">0.3</span>,</span></span>
+<span class="r-in"><span> size <span class="op">=</span> <span class="fl">0.8</span>,</span></span>
+<span class="r-in"><span> bg <span class="op">=</span> <span class="st">"grey"</span></span></span>
+<span class="r-in"><span> <span class="op">)</span> <span class="op">+</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/stat_summary.html" class="external-link">stat_summary</a></span><span class="op">(</span></span></span>
+<span class="r-in"><span> fun <span class="op">=</span> <span class="va">mean</span>,</span></span>
+<span class="r-in"><span> geom <span class="op">=</span> <span class="st">"point"</span>,</span></span>
+<span class="r-in"><span> size <span class="op">=</span> <span class="fl">1.5</span>,</span></span>
+<span class="r-in"><span> color <span class="op">=</span> <span class="st">"black"</span>,</span></span>
+<span class="r-in"><span> alpha <span class="op">=</span> <span class="fl">0.6</span></span></span>
+<span class="r-in"><span> <span class="op">)</span> <span class="op">+</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html" class="external-link">theme_classic</a></span><span class="op">(</span>base_size <span class="op">=</span> <span class="fl">32</span>, base_line_size <span class="op">=</span> <span class="fl">0.5</span><span class="op">)</span> <span class="op">+</span></span></span>
+<span class="r-in"><span><span class="fu">scale_fill_poison</span><span class="op">(</span></span></span>
+<span class="r-in"><span> name <span class="op">=</span> <span class="st">"Ramazonica"</span>,</span></span>
+<span class="r-in"><span> type <span class="op">=</span> <span class="st">"discrete"</span>,</span></span>
+<span class="r-in"><span> alpha <span class="op">=</span> <span class="fl">0.95</span>,</span></span>
+<span class="r-in"><span> direction <span class="op">=</span> <span class="op">-</span><span class="fl">1</span></span></span>
+<span class="r-in"><span> <span class="op">)</span> <span class="op">+</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html" class="external-link">theme</a></span><span class="op">(</span>legend.position <span class="op">=</span> <span class="st">"none"</span><span class="op">)</span> <span class="op">+</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">xlab</a></span><span class="op">(</span><span class="cn">NULL</span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Continuous example</span></span></span>
-<span class="r-in"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">mpg</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span><span class="va">displ</span>, <span class="va">hwy</span>, fill <span class="op">=</span> <span class="va">cty</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span></span>
-<span class="r-in"><span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html" class="external-link">geom_point</a></span><span class="op">(</span>shape <span class="op">=</span> <span class="fl">21</span>, size <span class="op">=</span> <span class="fl">3</span>, colour <span class="op">=</span> <span class="st">"white"</span><span class="op">)</span> <span class="op">+</span></span></span>
-<span class="r-in"><span>  <span class="fu">scale_fill_poison</span><span class="op">(</span><span class="st">"D_tinctorius"</span>, type <span class="op">=</span> <span class="st">"continuous"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">df_nottem</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">temp</span>, y <span class="op">=</span> <span class="va">month</span>, fill <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes_eval.html" class="external-link">stat</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span></span>
+<span class="r-in"><span><span class="fu">geom_density_ridges_gradient</span><span class="op">(</span>scale <span class="op">=</span> <span class="fl">2</span>, rel_min_height <span class="op">=</span> <span class="fl">0.01</span><span class="op">)</span> <span class="op">+</span></span></span>
+<span class="r-in"><span><span class="fu">scale_fill_poison</span><span class="op">(</span></span></span>
+<span class="r-in"><span> name <span class="op">=</span> <span class="st">"Ramazonica"</span>,</span></span>
+<span class="r-in"><span> type <span class="op">=</span> <span class="st">"continuous"</span>,</span></span>
+<span class="r-in"><span> alpha <span class="op">=</span> <span class="fl">0.95</span>,</span></span>
+<span class="r-in"><span> direction <span class="op">=</span> <span class="fl">1</span></span></span>
+<span class="r-in"><span> <span class="op">)</span> <span class="op">+</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span></span></span>
+<span class="r-in"><span>fill <span class="op">=</span> <span class="st">"ºF"</span><span class="op">)</span> <span class="op">+</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html" class="external-link">theme_light</a></span><span class="op">(</span>base_size <span class="op">=</span> <span class="fl">26</span>, base_line_size <span class="op">=</span> <span class="fl">0.5</span><span class="op">)</span> <span class="op">+</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html" class="external-link">theme</a></span><span class="op">(</span></span></span>
+<span class="r-in"><span> legend.position <span class="op">=</span> <span class="st">"right"</span>,</span></span>
+<span class="r-in"><span> legend.justification <span class="op">=</span> <span class="st">"left"</span>,</span></span>
+<span class="r-in"><span> legend.margin <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">margin</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">0</span>,<span class="fl">0</span>,<span class="fl">0</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span> legend.box.margin <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">margin</a></span><span class="op">(</span><span class="op">-</span><span class="fl">20</span>,<span class="op">-</span><span class="fl">20</span>,<span class="op">-</span><span class="fl">20</span>,<span class="op">-</span><span class="fl">20</span><span class="op">)</span></span></span>
+<span class="r-in"><span> <span class="op">)</span></span></span>
 <span class="r-in"><span><span class="op">}</span> <span class="co"># }</span></span></span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
