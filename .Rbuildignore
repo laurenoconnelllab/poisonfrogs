@@ -8,3 +8,5 @@
 ^\.github$
 ^README\.Rmd$
 ^dev$
+^README\.html$
+^poisonfrogs\.Rproj$

@@ -12,3 +12,8 @@ A character vector of palette names.
 \description{
 List available poison palettes
 }
+\examples{
+
+poison_palettes_names()
+
+}

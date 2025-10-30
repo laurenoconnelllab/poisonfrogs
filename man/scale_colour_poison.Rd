@@ -23,7 +23,7 @@ scale_color_poison(
 }
 \arguments{
 \item{name}{Character. Name of the poison-frog palette to use
-(must exist in your internal \code{poison_palettes} registry).}
+(see \code{poison_palette_names}).}
 
 \item{type}{Either \code{"discrete"} or \code{"continuous"}. Selects which kind of
 ggplot2 scale is constructed.}
@@ -41,7 +41,7 @@ transparency to all colours (both discrete and continuous modes).}
 A ggplot2 scale object.
 }
 \description{
-A unified \strong{colour} scale that works with either \strong{discrete} or
+A \strong{colour} scale that works with either \strong{discrete} or
 \strong{continuous} data, controlled by \code{type}. For discrete data it uses
 \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}, and for continuous data it builds a smooth
 gradient with \code{\link[ggplot2:scale_gradient]{ggplot2::scale_colour_gradientn()}}.
@@ -57,19 +57,30 @@ returns \code{n} colours on demand for \code{\link[ggplot2:discrete_scale]{ggplo
 \examples{
 \dontrun{
 library(ggplot2)
+library(gapminder)
 
 # Discrete example
-ggplot(mtcars, aes(factor(cyl), fill = factor(gear))) +
-  geom_bar() +
-  scale_fill_poison("O_sylvatica_N", type = "discrete")
+ggplot(gapminder, aes(x = lifeExp, y = log(gdpPercap), colour = continent)) +
+ geom_point(alpha = 0.2) +
+ scale_colour_poison(name = "Ramazonica", type = "discrete") +
+ stat_smooth() +
+ facet_wrap(. ~ continent, scales = "free") +
+ theme_minimal(21, base_line_size = 0.2) +
+ theme(
+   legend.position = "none",
+   strip.background = element_blank(),
+   strip.placement = "outside"
+   )
 
 # Continuous example
 ggplot(mtcars, aes(wt, mpg, colour = disp)) +
-  geom_point(size = 3) +
-  scale_colour_poison("D_tinctorius", type = "continuous", direction = -1)
+ geom_point(size = 3) +
+ scale_colour_poison("Dtalanis", type = "continuous", direction = -1) +
+ stat_smooth(col = "black") +
+ theme_classic(base_size = 32, base_line_size = 0.5)
 }
 
 }
 \seealso{
-\code{\link[=scale_fill_poison]{scale_fill_poison()}}, \code{poison_palette()}, \code{poison_pal()}, \code{show_poison()}
+\code{\link[=scale_fill_poison]{scale_fill_poison()}}, \code{poison_palette()}, \code{poison_pal()}
 }

@@ -1,12 +1,12 @@
 #' Poison frog colour scale for ggplot2
 #'
-#' A unified **colour** scale that works with either **discrete** or
+#' A **colour** scale that works with either **discrete** or
 #' **continuous** data, controlled by `type`. For discrete data it uses
 #' [ggplot2::discrete_scale()], and for continuous data it builds a smooth
 #' gradient with [ggplot2::scale_colour_gradientn()].
 #'
 #' @param name Character. Name of the poison-frog palette to use
-#'   (must exist in your internal `poison_palettes` registry).
+#'   (see `poison_palette_names`).
 #' @param type Either `"discrete"` or `"continuous"`. Selects which kind of
 #'   ggplot2 scale is constructed.
 #' @param direction Integer. `1` for the palette in its stored order, `-1` to
@@ -24,21 +24,32 @@
 #'
 #' @return A ggplot2 scale object.
 #'
-#' @seealso [scale_fill_poison()], `poison_palette()`, `poison_pal()`, `show_poison()`
+#' @seealso [scale_fill_poison()], `poison_palette()`, `poison_pal()`
 #'
 #' @examples
 #' \dontrun{
 #' library(ggplot2)
+#' library(gapminder)
 #'
 #' # Discrete example
-#' ggplot(mtcars, aes(factor(cyl), fill = factor(gear))) +
-#'   geom_bar() +
-#'   scale_fill_poison("O_sylvatica_N", type = "discrete")
+#' ggplot(gapminder, aes(x = lifeExp, y = log(gdpPercap), colour = continent)) +
+#'  geom_point(alpha = 0.2) +
+#'  scale_colour_poison(name = "Ramazonica", type = "discrete") +
+#'  stat_smooth() +
+#'  facet_wrap(. ~ continent, scales = "free") +
+#'  theme_minimal(21, base_line_size = 0.2) +
+#'  theme(
+#'    legend.position = "none",
+#'    strip.background = element_blank(),
+#'    strip.placement = "outside"
+#'    )
 #'
 #' # Continuous example
 #' ggplot(mtcars, aes(wt, mpg, colour = disp)) +
-#'   geom_point(size = 3) +
-#'   scale_colour_poison("D_tinctorius", type = "continuous", direction = -1)
+#'  geom_point(size = 3) +
+#'  scale_colour_poison("Dtalanis", type = "continuous", direction = -1) +
+#'  stat_smooth(col = "black") +
+#'  theme_classic(base_size = 32, base_line_size = 0.5)
 #' }
 #'
 #' @export
@@ -87,21 +98,58 @@ scale_color_poison <- scale_colour_poison
 #'
 #' @return A ggplot2 scale object.
 #'
-#' @seealso [scale_colour_poison()], `poison_palette()`, `poison_pal()`, `show_poison()`
+#' @seealso [scale_colour_poison()], `poison_palette()`, `poison_pal()`
 #'
 #' @examples
 #' \dontrun{
 #' library(ggplot2)
+#' library(gapminder)
 #'
 #' # Discrete example
-#' ggplot(mpg, aes(class, fill = drv)) +
-#'   geom_bar() +
-#'   scale_fill_poison("O_sylvatica_S", type = "discrete", alpha = 0.95)
+#' ggplot(gapminder, aes(x = continent, y = lifeExp, fill = continent)) +
+#' geom_violin(trim = FALSE, alpha = 0.75) +
+#' geom_jitter(
+#'  shape = 21,
+#'  position = position_jitter(0.1),
+#'  alpha = 0.3,
+#'  size = 0.8,
+#'  bg = "grey"
+#'  ) +
+#' stat_summary(
+#'  fun = mean,
+#'  geom = "point",
+#'  size = 1.5,
+#'  color = "black",
+#'  alpha = 0.6
+#'  ) +
+#' theme_classic(base_size = 32, base_line_size = 0.5) +
+#' scale_fill_poison(
+#'  name = "Ramazonica",
+#'  type = "discrete",
+#'  alpha = 0.95,
+#'  direction = -1
+#'  ) +
+#' theme(legend.position = "none") +
+#' xlab(NULL)
 #'
 #' # Continuous example
-#' ggplot(mpg, aes(displ, hwy, fill = cty)) +
-#'   geom_point(shape = 21, size = 3, colour = "white") +
-#'   scale_fill_poison("D_tinctorius", type = "continuous")
+#' ggplot(df_nottem, aes(x = temp, y = month, fill = stat(x))) +
+#' geom_density_ridges_gradient(scale = 2, rel_min_height = 0.01) +
+#' scale_fill_poison(
+#'  name = "Ramazonica",
+#'  type = "continuous",
+#'  alpha = 0.95,
+#'  direction = 1
+#'  ) +
+#' labs(
+#' fill = "ºF") +
+#' theme_light(base_size = 26, base_line_size = 0.5) +
+#' theme(
+#'  legend.position = "right",
+#'  legend.justification = "left",
+#'  legend.margin = margin(0,0,0,0),
+#'  legend.box.margin = margin(-20,-20,-20,-20)
+#'  )
 #' }
 #'
 #' @export
@@ -128,7 +176,8 @@ scale_fill_poison <- function(
       n = 256,
       type = "continuous",
       direction = direction,
-      alpha = alpha
+      alpha = alpha,
+      return = "vector"
     )
     ggplot2::scale_fill_gradientn(colours = cols, ...)
   }

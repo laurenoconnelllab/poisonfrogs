@@ -14,7 +14,7 @@ scale_fill_poison(
 }
 \arguments{
 \item{name}{Character. Name of the poison-frog palette to use
-(must exist in your internal \code{poison_palettes} registry).}
+(see \code{poison_palette_names}).}
 
 \item{type}{Either \code{"discrete"} or \code{"continuous"}. Selects which kind of
 ggplot2 scale is constructed.}
@@ -40,19 +40,56 @@ gradient with \code{\link[ggplot2:scale_gradient]{ggplot2::scale_fill_gradientn(
 \examples{
 \dontrun{
 library(ggplot2)
+library(gapminder)
 
 # Discrete example
-ggplot(mpg, aes(class, fill = drv)) +
-  geom_bar() +
-  scale_fill_poison("O_sylvatica_S", type = "discrete", alpha = 0.95)
+ggplot(gapminder, aes(x = continent, y = lifeExp, fill = continent)) +
+geom_violin(trim = FALSE, alpha = 0.75) +
+geom_jitter(
+ shape = 21,
+ position = position_jitter(0.1),
+ alpha = 0.3,
+ size = 0.8,
+ bg = "grey"
+ ) +
+stat_summary(
+ fun = mean,
+ geom = "point",
+ size = 1.5,
+ color = "black",
+ alpha = 0.6
+ ) +
+theme_classic(base_size = 32, base_line_size = 0.5) +
+scale_fill_poison(
+ name = "Ramazonica",
+ type = "discrete",
+ alpha = 0.95,
+ direction = -1
+ ) +
+theme(legend.position = "none") +
+xlab(NULL)
 
 # Continuous example
-ggplot(mpg, aes(displ, hwy, fill = cty)) +
-  geom_point(shape = 21, size = 3, colour = "white") +
-  scale_fill_poison("D_tinctorius", type = "continuous")
+ggplot(df_nottem, aes(x = temp, y = month, fill = stat(x))) +
+geom_density_ridges_gradient(scale = 2, rel_min_height = 0.01) +
+scale_fill_poison(
+ name = "Ramazonica",
+ type = "continuous",
+ alpha = 0.95,
+ direction = 1
+ ) +
+labs(
+fill = "ºF") +
+theme_light(base_size = 26, base_line_size = 0.5) +
+theme(
+ legend.position = "right",
+ legend.justification = "left",
+ legend.margin = margin(0,0,0,0),
+ legend.box.margin = margin(-20,-20,-20,-20)
+ )
 }
 
 }
 \seealso{
-\code{\link[=scale_colour_poison]{scale_colour_poison()}}, \code{poison_palette()}, \code{poison_pal()}, \code{show_poison()}
+\code{\link[=scale_colour_poison]{scale_colour_poison()}}, \code{poison_palette()}, \code{poison_pal()}
 }

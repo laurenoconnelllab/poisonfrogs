@@ -2,20 +2,21 @@
 % Please edit documentation in R/poison_frog_palettes.R
 \name{poison_palette}
 \alias{poison_palette}
-\title{Get colours from a poison frog palette}
+\title{Poison-frog palettes: plot or hex codes}
 \usage{
 poison_palette(
   name,
   n = NULL,
   type = c("discrete", "continuous"),
   direction = 1,
-  alpha = NULL
+  alpha = NULL,
+  return = c("plot", "vector")
 )
 }
 \arguments{
 \item{name}{Character. Palette name (see \code{\link[=poison_palettes_names]{poison_palettes_names()}}).}
 
-\item{n}{Integer (optional). Number of colours to return. Defaults to the
+\item{n}{Integer (optional). Number of colours to use. Defaults to the
 palette length for \code{type = "discrete"} and 256 for \code{type = "continuous"}.}
 
 \item{type}{Either \code{"discrete"} or \code{"continuous"}.}
@@ -24,10 +25,30 @@ palette length for \code{type = "discrete"} and 256 for \code{type = "continuous
 
 \item{alpha}{Optional numeric in \verb{[0, 1]}. Uniform transparency applied to
 all colours.}
+
+\item{return}{Either \code{"plot"} (default) to show a tile plot with hex labels,
+or \code{"vector"} to return a character vector of hex colours.}
 }
 \value{
-Character vector of hex colours (alpha applied if requested).
+If \code{return = "plot"}, a ggplot2 object. If \code{return = "vector"},
+a character vector of hex colours.
 }
 \description{
-Generator for both discrete and continuous palettes
+Generate colours from a poison-frog palette and, by default, show them as
+labelled tiles. Set \code{return = "vector"} to get the hex codes instead (useful
+for programmatic use and ggplot2 scale factories).
+}
+\examples{
+# Show a palette as tiles (default)
+poison_palette("Ramazonica")
+
+# Reverse order and show only 4 colours
+poison_palette("Ramazonica", n = 4, direction = -1)
+
+# Get a vector with the palette hex codes
+cols <- poison_palette("Ramazonica", return = "vector")
+
+# Continuous gradient preview (16 swatches)
+poison_palette("Osotokiki", type = "continuous", n = 16)
+
 }

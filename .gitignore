@@ -5,3 +5,8 @@
 .DS_Store
 .quarto
 docs
+
+/.quarto/
+
+# Ignore pkgdown site archives
+poisonfrogs-site*.zip

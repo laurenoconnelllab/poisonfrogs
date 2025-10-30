@@ -5,7 +5,7 @@
 \alias{poison_palettes}
 \title{Poison frog palettes}
 \format{
-An object of class \code{list} of length 12.
+An object of class \code{list} of length 42.
 }
 \usage{
 poison_palettes
