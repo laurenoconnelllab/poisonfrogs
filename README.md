@@ -5,7 +5,11 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/laurenoconnelllab/dartPal1/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/laurenoconnelllab/dartPal1/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/laurenoconnelllab/poisonfrogs/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/laurenoconnelllab/poisonfrogs/actions/workflows/R-CMD-check.yaml)
+
+[![Lifecycle:
+stable](https://lifecycle.r-lib.org/articles/figures/lifecycle-stable.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+
 <!-- badges: end -->
 
 `poisonfrogs` is an extensive collection of 31 colour palettes inspired
@@ -243,11 +247,10 @@ Tanimboca reserve, Colombia.
 *Hypsiboas hobbsi*, from the Amazon rainforest of the Tanimboca reserve,
 Colombia.
 
-## *Hyalinobatrachium fleischmanni*
+## *Hyalinobatrachium aureoguttatum*
 
-![](man/figures/Hfleischmanni.png) Inspired after the Fleischmann’s
-glass frog, *Hyalinobatrachium fleischmanni*, from the rainforest in
-Ecuador.
+![](man/figures/Haureoguttatum.png) Inspired after the Sun glass frog,
+*Hyalinobatrachium aureoguttatum*, from the rainforest in Ecuador.
 
 ## *Lithodythes lineatus*
 
@@ -279,14 +282,14 @@ marina*, from the Nouragues rainforest in French Guiana.
 
 ## Usage
 
-To call the names of all the xyz colour palettes in poisonfrogs:
+To call the names of all the 42 colour palettes in poisonfrogs:
 
 ``` r
 poison_palettes_names()
 #>  [1] "Afemoralis"      "Afulguritus"     "Amacero"         "Aminutus"       
 #>  [5] "Ashihuemoy"      "Atrivittata"     "Bpicturata"      "Dauratus"       
 #>  [9] "Dsarayacuensis"  "Dtalanis"        "Dtazureus"       "Eanthonyi"      
-#> [13] "Edarwinwallacei" "Etricolor"       "Hcinerascens"    "Hfleischmanni"  
+#> [13] "Edarwinwallacei" "Etricolor"       "Haureoguttatum"  "Hcinerascens"   
 #> [17] "Hhobbsi"         "Llineatus"       "Mlaevigata"      "Oanchicayensis" 
 #> [21] "Ohistrionica"    "Olehmanni"       "Opbluejeans"     "Opcolon"        
 #> [25] "Opescudo"        "Oploma"          "Opsancristobal"  "Opuyama"        
@@ -301,7 +304,7 @@ every palette:
 
 ``` r
 # plot palette with hex codes
-poison_palette("Hfleischmanni")
+poison_palette("Haureoguttatum")
 ```
 
 <img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />

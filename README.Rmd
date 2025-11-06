@@ -17,7 +17,10 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/laurenoconnelllab/dartPal1/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/laurenoconnelllab/dartPal1/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/laurenoconnelllab/poisonfrogs/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/laurenoconnelllab/poisonfrogs/actions/workflows/R-CMD-check.yaml)
+
+[![Lifecycle: stable](https://lifecycle.r-lib.org/articles/figures/lifecycle-stable.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+
 <!-- badges: end -->
 
 `poisonfrogs` is an extensive collection of 31 colour palettes inspired in Neotropical poison frogs. With more than 200 brighly colored species, Neotropical poison frogs paint the rain forest in vivid hues that shout a clear message: "I'm toxic!". Spice up your plots with `poisonfrogs` and give your dataviz a toxic twist! But wait, we also included few color palettes inspired on other pretty frog species, because... why not? 
@@ -193,9 +196,9 @@ library(poisonfrogs)
 
 ![](man/figures/Hhobbsi.png) Inspired after the Hobbs' tree frog, *Hypsiboas hobbsi*, from the Amazon rainforest of the Tanimboca reserve, Colombia.
 
-## *Hyalinobatrachium fleischmanni*
+## *Hyalinobatrachium aureoguttatum*
 
-![](man/figures/Hfleischmanni.png) Inspired after the Fleischmann's glass frog, *Hyalinobatrachium fleischmanni*, from the rainforest in Ecuador.
+![](man/figures/Haureoguttatum.png) Inspired after the Sun glass frog, *Hyalinobatrachium aureoguttatum*, from the rainforest in Ecuador.
 
 ## *Lithodythes lineatus*
 
@@ -219,7 +222,7 @@ library(poisonfrogs)
 
 ## Usage
 
-To call the names of all the xyz colour palettes in poisonfrogs:
+To call the names of all the 42 colour palettes in poisonfrogs:
 
 ```{r}
 poison_palettes_names()
@@ -229,7 +232,7 @@ Plot poison frog palettes and print the hex codes of the colours in every palett
 
 ```{r, fig.width=7, fig.height=1.2}
 # plot palette with hex codes
-poison_palette("Hfleischmanni")
+poison_palette("Haureoguttatum")
 
 # get hex codes for a vector
 cols <- poison_palette("Dtalanis", return = "vector")

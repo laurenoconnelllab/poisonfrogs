@@ -13,7 +13,9 @@ RoxygenNote: 7.3.2
 URL: https://laurenoconnelllab.github.io/poisonfrogs/
 BugReports: https://github.com/laurenoconnelllab/poisonfrogs/issues
 Depends: R (>= 2.10)
-Imports: ggplot2 (>= 3.4.0),
-         rlang
+Imports: 
+    ggplot2 (>= 3.4.0),
+    lifecycle,
+    rlang
 Suggests: testthat (>= 3.0.0)
 Config/testthat/edition: 3    

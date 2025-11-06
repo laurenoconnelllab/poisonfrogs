@@ -37,7 +37,7 @@ poison_palettes <- list(
   Edarwinwallacei = c("#F2F2F2", "#F2D479", "#D99C52", "#403636", "#0D0A0A"),
   Bpicturata = c("#291D11", "#726241", "#9F7A6A", "#CFCDAC", "#D9D6D3"),
   Dsarayacuensis = c("#FDFFFD", "#EAD676", "#B18044", "#BE5121", "#5F3C10"),
-  Hfleischmanni = c("#732937", "#565902", "#D9A404", "#D9CAB0", "#F2F2F2"),
+  Haureoguttatum = c("#732937", "#565902", "#D9A404", "#D9CAB0", "#F2F2F2"),
   Hcinerascens = c("#CCB33C", "#979136", "#57724C", "#9C4E1E", "#49210D"),
   Hhobbsi = c("#EBE6D5", "#86948C", "#949C67", "#9A7726", "#4F290A"),
   Llineatus = c("#C0B956", "#C69B40", "#C75D25", "#493836", "#20110A"),
