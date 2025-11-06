@@ -17,18 +17,10 @@ color palettes inspired on other pretty frog species, because… why not?
 
 ## Installation
 
-You can install `poisonfrogs` for now using the
-**poisonfrogs_1.0.0.tar.gz** file (from CRAN later after release):
+You can install `poisonfrogs` from CRAN:
 
 ``` r
-
-install.packages("poisonfrogs_1.0.0.tar.gz", repos = NULL, type = "source")
-```
-
-load the package:
-
-``` r
-library(poisonfrogs)
+install.packages("poisonfrogs")
 ```
 
 or from the development version in
@@ -36,6 +28,12 @@ or from the development version in
 
 ``` r
 remotes::install_github("laurenoconnelllab/poisonfrogs")
+```
+
+load the package:
+
+``` r
+library(poisonfrogs)
 ```
 
 ## Poison frog color palettes “*At a glance*”

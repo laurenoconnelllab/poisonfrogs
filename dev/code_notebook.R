@@ -186,3 +186,6 @@ d3_rev <- poison_palette(
   direction = -1,
   return = "vector"
 )
+
+
+install.packages("poisonfrogs_1.0.0.tar.gz", repos = NULL, type = "source")
