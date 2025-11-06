@@ -17,9 +17,10 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 
+[![R-CMD-check](https://github.com/laurenoconnelllab/dartPal1/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/laurenoconnelllab/dartPal1/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-`poisonfrogs` is a extensive collection of 31 colour palettes inspired in Neotropical poison frogs. With more than 200 brighly colored species, Neotropical poison frogs paint the rain forest in vivid hues that shout a clear message: "I'm toxic!". Spice up your plots with `poisonfrogs` and give your dataviz a toxic twist! But wait, we also included few color palettes inspired on other pretty frog species, because... why not?
+`poisonfrogs` is an extensive collection of 31 colour palettes inspired in Neotropical poison frogs. With more than 200 brighly colored species, Neotropical poison frogs paint the rain forest in vivid hues that shout a clear message: "I'm toxic!". Spice up your plots with `poisonfrogs` and give your dataviz a toxic twist! But wait, we also included few color palettes inspired on other pretty frog species, because... why not? 
 
 ## Installation
 
@@ -242,7 +243,7 @@ cols
 
 ### Continuos scale
 
-```{r, message=FALSE, warning=FALSE}
+```{r, message=FALSE, warning=FALSE, out.width='60%', fig.align='center'}
 
 require(tidyverse)
 require(gapminder)
@@ -280,7 +281,7 @@ p1
 
 ### Discrete scale 1
 
-```{r, message=FALSE, warning=FALSE}
+```{r, message=FALSE, warning=FALSE, out.width='60%', fig.align='center'}
 
 #discrete scale 1
 p2 <- ggplot(gapminder, aes(x = continent, y = lifeExp, fill = continent)) +
@@ -314,7 +315,7 @@ p2
 ```
 
 ### Discrete scale 2
-```{r, message=FALSE, warning=FALSE}
+```{r, message=FALSE, warning=FALSE, out.width='60%', fig.align='center'}
 #discrete scale 2
 p3 <- ggplot(gapminder, aes(x = lifeExp, y = log(gdpPercap), colour = continent)) +
   geom_point(alpha = 0.2) +

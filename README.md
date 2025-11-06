@@ -5,9 +5,10 @@
 
 <!-- badges: start -->
 
+[![R-CMD-check](https://github.com/laurenoconnelllab/dartPal1/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/laurenoconnelllab/dartPal1/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-`poisonfrogs` is a extensive collection of 31 colour palettes inspired
+`poisonfrogs` is an extensive collection of 31 colour palettes inspired
 in Neotropical poison frogs. With more than 200 brighly colored species,
 Neotropical poison frogs paint the rain forest in vivid hues that shout
 a clear message: “I’m toxic!”. Spice up your plots with `poisonfrogs`
@@ -356,7 +357,7 @@ p1 <- ggplot(df_nottem, aes(x = temp, y = month, fill = after_stat(x))) +
 p1
 ```
 
-<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-7-1.png" width="60%" style="display: block; margin: auto;" />
 
 ### Discrete scale 1
 
@@ -393,7 +394,7 @@ p2 <- ggplot(gapminder, aes(x = continent, y = lifeExp, fill = continent)) +
 p2
 ```
 
-<img src="man/figures/README-unnamed-chunk-8-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-8-1.png" width="60%" style="display: block; margin: auto;" />
 
 ### Discrete scale 2
 
@@ -411,4 +412,4 @@ p3 <- ggplot(gapminder, aes(x = lifeExp, y = log(gdpPercap), colour = continent)
 p3
 ```
 
-<img src="man/figures/README-unnamed-chunk-9-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-9-1.png" width="60%" style="display: block; margin: auto;" />

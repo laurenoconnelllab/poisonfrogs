@@ -20,6 +20,7 @@ my_colors <- poison_palette("rimitator2", return = "vector")
 
 class(my_colors)
 
+poison_palette("caquita")
 
 ?scale_colour_poison()
 
@@ -171,3 +172,17 @@ grid.arrange(p1, arrangeGrob(p2, p3, nrow = 2), nrow = 1)
 zip - r
 poisonfrogs - site.zip
 docs
+
+
+d3 <- poison_palette(
+  "Oskoi",
+  type = "discrete",
+  return = "vector"
+)
+
+d3_rev <- poison_palette(
+  "Oskoi",
+  type = "discrete",
+  direction = -1,
+  return = "vector"
+)
