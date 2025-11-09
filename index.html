@@ -241,10 +241,10 @@
 <p><img src="reference/figures/Ossanantonio.png"> Inspired after the little devil poison frog, <em>Oophaga sylvatica “sanantonio”</em>, from the San Antonio population in Ecuador.</p>
 </div>
 <div class="section level2">
-<h2 id="oophaga-sylvatica-sp1">
-<em>Oophaga sylvatica “sp1”</em><a class="anchor" aria-label="anchor" href="#oophaga-sylvatica-sp1"></a>
+<h2 id="oophaga-sylvatica-ceiba">
+<em>Oophaga sylvatica “Ceiba”</em><a class="anchor" aria-label="anchor" href="#oophaga-sylvatica-ceiba"></a>
 </h2>
-<p><img src="reference/figures/Ossp1.png"> Inspired after the little devil poison frog, <em>Oophaga sylvatica “sp1”</em>, from the sp1 population in Ecuador.</p>
+<p><img src="reference/figures/Osceiba.png"> Inspired after the little devil poison frog, <em>Oophaga sylvatica “Ceiba”</em>, from the Ceiba population in Ecuador.</p>
 </div>
 <div class="section level2">
 <h2 id="phyllobates-terribilis">
@@ -353,8 +353,8 @@
 <span><span class="co">#&gt; [17] "Hhobbsi"         "Llineatus"       "Mlaevigata"      "Oanchicayensis" </span></span>
 <span><span class="co">#&gt; [21] "Ohistrionica"    "Olehmanni"       "Opbluejeans"     "Opcolon"        </span></span>
 <span><span class="co">#&gt; [25] "Opescudo"        "Oploma"          "Opsancristobal"  "Opuyama"        </span></span>
-<span><span class="co">#&gt; [29] "Oscolon"         "Oskoi"           "Oslita"          "Osotokiki"      </span></span>
-<span><span class="co">#&gt; [33] "Ossanantonio"    "Ossp1"           "Pterribilis"     "Ptomopterna"    </span></span>
+<span><span class="co">#&gt; [29] "Osceiba"         "Oscolon"         "Oskoi"           "Oslita"         </span></span>
+<span><span class="co">#&gt; [33] "Osotokiki"       "Ossanantonio"    "Pterribilis"     "Ptomopterna"    </span></span>
 <span><span class="co">#&gt; [37] "Pvaillantii"     "Ramazonica"      "Ribanded"        "Ristriped"      </span></span>
 <span><span class="co">#&gt; [41] "Rmarina"         "Rvariabilis"</span></span></code></pre></div>
 <p>Plot poison frog palettes and print the hex codes of the colours in every palette:</p>
@@ -397,8 +397,7 @@
 <span>    name <span class="op">=</span> <span class="st">"Oskoi"</span>,</span>
 <span>    type <span class="op">=</span> <span class="st">"continuous"</span>,</span>
 <span>    alpha <span class="op">=</span> <span class="fl">0.95</span>,</span>
-<span>    direction <span class="op">=</span> <span class="op">-</span><span class="fl">1</span></span>
-<span>  <span class="op">)</span> <span class="op">+</span></span>
+<span>    direction <span class="op">=</span> <span class="op">-</span><span class="fl">1</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">labs</span><span class="op">(</span></span>
 <span>  fill <span class="op">=</span> <span class="st">"ºF"</span>,</span>
 <span>  y <span class="op">=</span> <span class="cn">NULL</span>,</span>
@@ -436,7 +435,7 @@
 <span>  <span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">theme_classic</span><span class="op">(</span>base_size <span class="op">=</span> <span class="fl">20</span>, base_line_size <span class="op">=</span> <span class="fl">0.5</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="reference/scale_fill_poison.html">scale_fill_poison</a></span><span class="op">(</span></span>
-<span>    name <span class="op">=</span> <span class="st">"Opcolon"</span>,</span>
+<span>    name <span class="op">=</span> <span class="st">"Oanchicayensis"</span>,</span>
 <span>    type <span class="op">=</span> <span class="st">"discrete"</span>,</span>
 <span>    alpha <span class="op">=</span> <span class="fl">0.95</span>,</span>
 <span>    direction <span class="op">=</span> <span class="op">-</span><span class="fl">1</span></span>
@@ -455,7 +454,7 @@
 <code class="sourceCode R"><span><span class="co">#discrete scale 2</span></span>
 <span><span class="va">p3</span> <span class="op">&lt;-</span> <span class="fu">ggplot</span><span class="op">(</span><span class="va">gapminder</span>, <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">lifeExp</span>, y <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="va">gdpPercap</span><span class="op">)</span>, colour <span class="op">=</span> <span class="va">continent</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">geom_point</span><span class="op">(</span>alpha <span class="op">=</span> <span class="fl">0.2</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="reference/scale_colour_poison.html">scale_colour_poison</a></span><span class="op">(</span>name <span class="op">=</span> <span class="st">"Ashihuemoy"</span>, type <span class="op">=</span> <span class="st">"discrete"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="reference/scale_colour_poison.html">scale_colour_poison</a></span><span class="op">(</span>name <span class="op">=</span> <span class="st">"Ramazonica"</span>, type <span class="op">=</span> <span class="st">"discrete"</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">stat_smooth</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">facet_wrap</span><span class="op">(</span><span class="va">.</span><span class="op">~</span><span class="va">continent</span>, scales <span class="op">=</span> <span class="st">"free"</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">theme_minimal</span><span class="op">(</span><span class="fl">20</span>, base_line_size <span class="op">=</span> <span class="fl">0.2</span><span class="op">)</span> <span class="op">+</span></span>
@@ -516,7 +515,7 @@
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.3.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.0.</p>
 </div>
 
     </footer>
