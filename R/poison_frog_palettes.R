@@ -3,7 +3,7 @@
 #'
 #' @keywords internal
 poison_palettes <- list(
-  Ramazonica = c("#538D71", "#3C6B78", "#983E18", "#A26021", "#CFA838"),
+  Ramazonica = c("#3C6B78", "#538D71", "#CFA838", "#A26021", "#983E18"),
   Ristriped = c("#2A5D86", "#658C93", "#587F61", "#C4B500", "#4A4B13"),
   Ribanded = c("#0C0D0C", "#F2B705", "#F29F05", "#A65D03", "#F2F2F2"),
   Rvariabilis = c("#122F51", "#3D5689", "#8E97B5", "#E1C250", "#4D4B13"),
@@ -13,7 +13,7 @@ poison_palettes <- list(
   Oscolon = c("#432B18", "#712C0F", "#D74905", "#FFAC18", "#FBF895"),
   Ossanantonio = c("#D9D4BA", "#F2A7B5", "#F23005", "#8C0E03", "#3F402C"),
   Oslita = c("#431509", "#862D12", "#D19F36", "#EED95D", "#D0D9D0"),
-  Ossp1 = c("#F2ECE9", "#F2836B", "#F27405", "#F23A29", "#735E5A"),
+  Osceiba = c("#F2ECE9", "#F2836B", "#F27405", "#F23A29", "#735E5A"),
   Oskoi = c("#09142A", "#B8351F", "#F88705", "#ABD0DD", "#F2F9FE"),
   Olehmanni = c("#1B110F", "#FE4705", "#F59356", "#7997A5", "#D9DFDF"),
   Oanchicayensis = c("#261717", "#5A2511", "#FA6100", "#FCC908", "#D1D3DB"),

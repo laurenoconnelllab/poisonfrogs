@@ -191,10 +191,10 @@ Ecuador.
 frog, *Oophaga sylvatica “sanantonio”*, from the San Antonio population
 in Ecuador.
 
-## *Oophaga sylvatica “sp1”*
+## *Oophaga sylvatica “Ceiba”*
 
-![](man/figures/Ossp1.png) Inspired after the little devil poison frog,
-*Oophaga sylvatica “sp1”*, from the sp1 population in Ecuador.
+![](man/figures/Osceiba.png) Inspired after the little devil poison
+frog, *Oophaga sylvatica “Ceiba”*, from the Ceiba population in Ecuador.
 
 ## *Phyllobates terribilis*
 
@@ -293,8 +293,8 @@ poison_palettes_names()
 #> [17] "Hhobbsi"         "Llineatus"       "Mlaevigata"      "Oanchicayensis" 
 #> [21] "Ohistrionica"    "Olehmanni"       "Opbluejeans"     "Opcolon"        
 #> [25] "Opescudo"        "Oploma"          "Opsancristobal"  "Opuyama"        
-#> [29] "Oscolon"         "Oskoi"           "Oslita"          "Osotokiki"      
-#> [33] "Ossanantonio"    "Ossp1"           "Pterribilis"     "Ptomopterna"    
+#> [29] "Osceiba"         "Oscolon"         "Oskoi"           "Oslita"         
+#> [33] "Osotokiki"       "Ossanantonio"    "Pterribilis"     "Ptomopterna"    
 #> [37] "Pvaillantii"     "Ramazonica"      "Ribanded"        "Ristriped"      
 #> [41] "Rmarina"         "Rvariabilis"
 ```
@@ -343,8 +343,7 @@ p1 <- ggplot(df_nottem, aes(x = temp, y = month, fill = after_stat(x))) +
     name = "Oskoi",
     type = "continuous",
     alpha = 0.95,
-    direction = -1
-  ) +
+    direction = -1) +
   labs(
   fill = "ºF",
   y = NULL,
@@ -383,7 +382,7 @@ p2 <- ggplot(gapminder, aes(x = continent, y = lifeExp, fill = continent)) +
   ) +
   theme_classic(base_size = 20, base_line_size = 0.5) +
   scale_fill_poison(
-    name = "Opcolon",
+    name = "Oanchicayensis",
     type = "discrete",
     alpha = 0.95,
     direction = -1
@@ -403,7 +402,7 @@ p2
 #discrete scale 2
 p3 <- ggplot(gapminder, aes(x = lifeExp, y = log(gdpPercap), colour = continent)) +
   geom_point(alpha = 0.2) +
-  scale_colour_poison(name = "Ashihuemoy", type = "discrete") +
+  scale_colour_poison(name = "Ramazonica", type = "discrete") +
   stat_smooth() +
   facet_wrap(.~continent, scales = "free") +
   theme_minimal(20, base_line_size = 0.2) +
