@@ -5,7 +5,7 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/laurenoconnelllab/poisonfrogs/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/laurenoconnelllab/poisonfrogs/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://img.shields.io/github/actions/workflow/status/laurenoconnelllab/poisonfrogs/R-CMD-check.yaml?branch=main)](https://github.com/laurenoconnelllab/poisonfrogs/actions/workflows/R-CMD-check.yaml)
 
 [![Lifecycle:
 stable](https://lifecycle.r-lib.org/articles/figures/lifecycle-stable.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
