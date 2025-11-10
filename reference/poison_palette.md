@@ -1,8 +1,6 @@
-# Poison-frog palettes: plot or hex codes
+# Plot and print poison frog color palettes.
 
-Generate colours from a poison-frog palette and, by default, show them
-as labelled tiles. Set `return = "vector"` to get the hex codes instead
-(useful for programmatic use and ggplot2 scale factories).
+Visualize colors and print hexcodes from a poison frog color palette.
 
 ## Usage
 
@@ -21,13 +19,14 @@ poison_palette(
 
 - name:
 
-  Character. Palette name (see
+  Character. Name of poison frog palette (one of
   [`poison_palettes_names()`](https://laurenoconnelllab.github.io/poisonfrogs/reference/poison_palettes_names.md)).
 
 - n:
 
   Integer (optional). Number of colours to use. Defaults to the palette
-  length for `type = "discrete"` and 256 for `type = "continuous"`.
+  length (max. n = 5) for `type = "discrete"` and 256 for
+  `type = "continuous"`.
 
 - type:
 

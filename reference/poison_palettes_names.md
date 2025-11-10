@@ -1,6 +1,7 @@
-# List available poison palettes
+# List the names of available color palettes inspired in poison frogs and other frog species.
 
-List available poison palettes
+List the names of available color palettes inspired in poison frogs and
+other frog species.
 
 ## Usage
 

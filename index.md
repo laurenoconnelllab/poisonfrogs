@@ -1,11 +1,11 @@
-# poisonfrogs: Color palettes inspired in Neotropical poison frogs
+# Color Palettes Inspired in Neotropical Poison Frogs
 
-`poisonfrogs` is an extensive collection of 31 colour palettes inspired
-in Neotropical poison frogs. With more than 200 brighly colored species,
-Neotropical poison frogs paint the rain forest in vivid hues that shout
-a clear message: “I’m toxic!”. Spice up your plots with `poisonfrogs`
-and give your dataviz a toxic twist! But wait, we also included few
-color palettes inspired on other pretty frog species, because… why not?
+A collection of 31 colour palettes inspired in Neotropical poison frogs.
+With more than 200 brighly colored species, Neotropical poison frogs
+paint the rain forest in vivid hues that shout a clear message: “I’m
+toxic!”. Spice up your plots with `poisonfrogs` and give your dataviz a
+toxic twist! But wait, we also included 11 color palettes inspired on
+other pretty frog species, because… why not?
 
 ## Installation
 
