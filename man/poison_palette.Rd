@@ -2,7 +2,7 @@
 % Please edit documentation in R/poison_frog_palettes.R
 \name{poison_palette}
 \alias{poison_palette}
-\title{Poison-frog palettes: plot or hex codes}
+\title{Plot and print poison frog color palettes.}
 \usage{
 poison_palette(
   name,
@@ -14,10 +14,10 @@ poison_palette(
 )
 }
 \arguments{
-\item{name}{Character. Palette name (see \code{\link[=poison_palettes_names]{poison_palettes_names()}}).}
+\item{name}{Character. Name of poison frog palette (one of \code{\link[=poison_palettes_names]{poison_palettes_names()}}).}
 
 \item{n}{Integer (optional). Number of colours to use. Defaults to the
-palette length for \code{type = "discrete"} and 256 for \code{type = "continuous"}.}
+palette length (max. n = 5) for \code{type = "discrete"} and 256 for \code{type = "continuous"}.}
 
 \item{type}{Either \code{"discrete"} or \code{"continuous"}.}
 
@@ -34,9 +34,7 @@ If \code{return = "plot"}, a ggplot2 object. If \code{return = "vector"},
 a character vector of hex colours.
 }
 \description{
-Generate colours from a poison-frog palette and, by default, show them as
-labelled tiles. Set \code{return = "vector"} to get the hex codes instead (useful
-for programmatic use and ggplot2 scale factories).
+Visualize colors and print hexcodes from a poison frog color palette.
 }
 \examples{
 # Show a palette as tiles (default)

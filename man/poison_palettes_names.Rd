@@ -2,7 +2,7 @@
 % Please edit documentation in R/poison_frog_palettes.R
 \name{poison_palettes_names}
 \alias{poison_palettes_names}
-\title{List available poison palettes}
+\title{List the names of available color palettes inspired in poison frogs and other frog species.}
 \usage{
 poison_palettes_names()
 }
@@ -10,7 +10,7 @@ poison_palettes_names()
 A character vector of palette names.
 }
 \description{
-List available poison palettes
+List the names of available color palettes inspired in poison frogs and other frog species.
 }
 \examples{
 

@@ -1,40 +1,39 @@
-#' Poison frog colour scale for ggplot2
+#' Poison frog color scales for ggplot2
 #'
-#' A **colour** scale that works with either **discrete** or
-#' **continuous** data, controlled by `type`. For discrete data it uses
-#' [ggplot2::discrete_scale()], and for continuous data it builds a smooth
-#' gradient with [ggplot2::scale_colour_gradientn()].
+#' The `poison` scales provide color maps inspired by the diverse colors
+#' of Neotropical poison frogs. For **discrete** data it uses
+#' [ggplot2::discrete_scale()], and for **continuous** data it builds a smooth
+#' gradient with [ggplot2::scale_color_gradientn()].
 #'
-#' @param name Character. Name of the poison-frog palette to use
-#'   (see `poison_palette_names`).
+#' @param name Character. Name of the poison frog palette to use
+#'   one of [poison_palette_names()].
 #' @param type Either `"discrete"` or `"continuous"`. Selects which kind of
 #'   ggplot2 scale is constructed.
 #' @param direction Integer. `1` for the palette in its stored order, `-1` to
 #'   reverse it.
-#' @param alpha Optional numeric in `[0, 1]`. If supplied, applies a uniform
-#'   transparency to all colours (both discrete and continuous modes).
-#' @param ... Additional arguments passed to the underlying ggplot2 scale
-#'   (e.g. `limits`, `breaks`, `labels`, `guide`, `oob`, etc.).
+#' @param alpha Optional numeric in `[0, 1]`. Applies a uniform
+#'   transparency to all colors (both discrete and continuous modes).
+#' @param ... Additional arguments passed to the underlying ggplot2 scale.
 #'
 #' @details
 #' - **Discrete:** relies on an internal function factory `poison_pal()` that
-#'   returns `n` colours on demand for [ggplot2::discrete_scale()].
-#' - **Continuous:** generates a 256-colour gradient via `poison_palette()`
-#'   (type `"continuous"`) and passes it to [ggplot2::scale_colour_gradientn()].
+#'   returns `n` colors (max. n = 5) on demand for [ggplot2::discrete_scale()].
+#' - **Continuous:** generates a 256-color gradient via `poison_palette()`
+#'   (type `"continuous"`) and passes it to [ggplot2::scale_color_gradientn()].
 #'
 #' @return A ggplot2 scale object.
 #'
-#' @seealso [scale_fill_poison()], `poison_palette()`, `poison_pal()`
+#' @seealso `poison_palette()`, `poison_pal()`
 #'
 #' @examples
 #' \dontrun{
 #' library(ggplot2)
 #' library(gapminder)
 #'
-#' # Discrete example
+#' # Using `scale_color_poison()` with discrete scale
 #' ggplot(gapminder, aes(x = lifeExp, y = log(gdpPercap), colour = continent)) +
 #'  geom_point(alpha = 0.2) +
-#'  scale_colour_poison(name = "Ramazonica", type = "discrete") +
+#'  scale_color_poison(name = "Ramazonica", type = "discrete") +
 #'  stat_smooth() +
 #'  facet_wrap(. ~ continent, scales = "free") +
 #'  theme_minimal(21, base_line_size = 0.2) +
@@ -44,68 +43,14 @@
 #'    strip.placement = "outside"
 #'    )
 #'
-#' # Continuous example
+#' # Using `scale_color_poison()` with continuous scale
 #' ggplot(mtcars, aes(wt, mpg, colour = disp)) +
 #'  geom_point(size = 3) +
-#'  scale_colour_poison("Dtalanis", type = "continuous", direction = -1) +
+#'  scale_color_poison("Dtalanis", type = "continuous", direction = -1) +
 #'  stat_smooth(col = "black") +
 #'  theme_classic(base_size = 32, base_line_size = 0.5)
-#' }
 #'
-#' @export
-#' @importFrom ggplot2 discrete_scale scale_colour_gradientn
-scale_colour_poison <- function(
-  name,
-  type = c("discrete", "continuous"),
-  direction = 1,
-  alpha = NULL,
-  ...
-) {
-  type <- match.arg(type)
-
-  if (type == "discrete") {
-    ggplot2::discrete_scale(
-      aesthetics = "colour",
-      scale_name = name,
-      palette = poison_pal(name = name, direction = direction, alpha = alpha),
-      ...
-    )
-  } else {
-    cols <- poison_palette(
-      name = name,
-      n = 256,
-      type = "continuous",
-      direction = direction,
-      alpha = alpha
-    )
-    ggplot2::scale_colour_gradientn(colours = cols, ...)
-  }
-}
-
-#' @rdname scale_colour_poison
-#' @export
-scale_color_poison <- scale_colour_poison
-
-
-#' Poison frog fill scale for ggplot2
-#'
-#' A unified **fill** scale that works with either **discrete** or
-#' **continuous** data, controlled by `type`. For discrete data it uses
-#' [ggplot2::discrete_scale()], and for continuous data it builds a smooth
-#' gradient with [ggplot2::scale_fill_gradientn()].
-#'
-#' @inheritParams scale_colour_poison
-#'
-#' @return A ggplot2 scale object.
-#'
-#' @seealso [scale_colour_poison()], `poison_palette()`, `poison_pal()`
-#'
-#' @examples
-#' \dontrun{
-#' library(ggplot2)
-#' library(gapminder)
-#'
-#' # Discrete example
+#' # Using `scale_fill_poison()` with discrete scale
 #' ggplot(gapminder, aes(x = continent, y = lifeExp, fill = continent)) +
 #' geom_violin(trim = FALSE, alpha = 0.75) +
 #' geom_jitter(
@@ -132,7 +77,7 @@ scale_color_poison <- scale_colour_poison
 #' theme(legend.position = "none") +
 #' xlab(NULL)
 #'
-#' # Continuous example
+#' # Using `scale_fill_poison()` with continuous scale
 #' ggplot(df_nottem, aes(x = temp, y = month, fill = stat(x))) +
 #' geom_density_ridges_gradient(scale = 2, rel_min_height = 0.01) +
 #' scale_fill_poison(
@@ -152,6 +97,44 @@ scale_color_poison <- scale_colour_poison
 #'  )
 #' }
 #'
+#' @rdname poison_scales
+#' @export
+#' @importFrom ggplot2 discrete_scale scale_color_gradientn
+scale_color_poison <- function(
+  name,
+  type = c("discrete", "continuous"),
+  direction = 1,
+  alpha = NULL,
+  ...
+) {
+  type <- match.arg(type)
+
+  if (type == "discrete") {
+    ggplot2::discrete_scale(
+      aesthetics = "colour",
+      scale_name = name,
+      palette = poison_pal(name = name, direction = direction, alpha = alpha),
+      ...
+    )
+  } else {
+    cols <- poison_palette(
+      name = name,
+      n = 256,
+      type = "continuous",
+      direction = direction,
+      alpha = alpha,
+      return = "vector"
+    )
+    ggplot2::scale_color_gradientn(colours = cols, ...)
+  }
+}
+
+#' @rdname poison_scales
+#' @export
+scale_colour_poison <- scale_color_poison
+
+
+#' @rdname poison_scales
 #' @export
 #' @importFrom ggplot2 discrete_scale scale_fill_gradientn
 scale_fill_poison <- function(

@@ -1,11 +1,12 @@
 Package: poisonfrogs
-Title: Colour Palettes of Neotropical Poison Frogs 
+Title: Color Palettes Inspired in Neotropical Poison Frogs 
 Version: 1.0.0
 Authors@R: c(
     person("Camilo", "Rodríguez", , "camilorl@stanford.edu", role = c("aut", "cre")),
     person("Lauren", "O'Connell", , "loconnel@stanford.edu", role = "aut")
     )
-Description: Provides colour palettes inspired by the enormous diversity of skin colours in Neotropical poison frog species. Suitable for use with ggplot2 and base R graphics.
+Description: A collection of color palettes inspired by the enormous diversity of skin colors 
+    in Neotropical poison frog species. Suitable for use with ggplot2 and base R graphics.
 License: MIT + file LICENSE 
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -17,5 +18,8 @@ Imports:
     ggplot2 (>= 3.4.0),
     lifecycle,
     rlang
-Suggests: testthat (>= 3.0.0)
+Suggests: 
+    testthat (>= 3.0.0),
+    gapminder,
+    ggridges
 Config/testthat/edition: 3    

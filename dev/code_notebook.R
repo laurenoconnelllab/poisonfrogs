@@ -26,6 +26,15 @@ poison_palette("caquita")
 
 scale_fill_poison()
 
+ggsci::scale_color_aaas()
+
+ggsci::pal_aaas()
+
+?poisonfrogs
+
+scale_fill_poison()
+scale_fill_viridis_b()
+scale_fill_brewer()
 
 #This function is important to make scale_fill/colour_poison for ggplot, because it will only recognize the setup of my functions
 poison_pal <- function(name, direction = 1, alpha = NULL) {

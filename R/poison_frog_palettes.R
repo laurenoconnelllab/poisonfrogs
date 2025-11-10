@@ -46,7 +46,7 @@ poison_palettes <- list(
   Pvaillantii = c("#CEC4B9", "#C89353", "#979136", "#424A17", "#5E2421"),
   Rmarina = c("#D7CCA2", "#B7A05D", "#84652E", "#4B250B", "#2E1204")
 )
-#' List available poison palettes
+#' List the names of available color palettes inspired in poison frogs and other frog species.
 #' @return A character vector of palette names.
 #' @examples
 #'
@@ -58,15 +58,13 @@ poison_palettes_names <- function() sort(names(poison_palettes))
 
 #'
 #'
-#' Poison-frog palettes: plot or hex codes
+#' Plot and print poison frog color palettes.
 #'
-#' Generate colours from a poison-frog palette and, by default, show them as
-#' labelled tiles. Set `return = "vector"` to get the hex codes instead (useful
-#' for programmatic use and ggplot2 scale factories).
+#' Visualize colors and print hexcodes from a poison frog color palette.
 #'
-#' @param name Character. Palette name (see [poison_palettes_names()]).
+#' @param name Character. Name of poison frog palette (one of [poison_palettes_names()]).
 #' @param n Integer (optional). Number of colours to use. Defaults to the
-#'   palette length for `type = "discrete"` and 256 for `type = "continuous"`.
+#'   palette length (max. n = 5) for `type = "discrete"` and 256 for `type = "continuous"`.
 #' @param type Either `"discrete"` or `"continuous"`.
 #' @param direction Integer. `1` for forward, `-1` for reversed order.
 #' @param alpha Optional numeric in `[0, 1]`. Uniform transparency applied to
