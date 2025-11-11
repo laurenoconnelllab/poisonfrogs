@@ -6,7 +6,7 @@ ggplot2 and base R graphics.
 
 ## Author
 
-**Maintainer**: Camilo Rodríguez <camilorl@stanford.edu>
+**Maintainer**: Camilo Rodríguez <camo.rodriguez@gmail.com>
 
 Authors:
 
