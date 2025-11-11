@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# Color Palettes Inspired in Neotropical Poison Frogs <img src="man/figures/logo.png" width="280px" align="right"/>
+# Color Palettes Inspired in Neotropical Poison Frogs <img src="man/figures/logo.png" width="180px" align="right"/>
 
 <!-- badges: start -->
 

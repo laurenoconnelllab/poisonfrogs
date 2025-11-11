@@ -11,3 +11,4 @@
 ^README\.html$
 ^poisonfrogs\.Rproj$
 ^cran-comments\.md$
+^index\.Rmd$
