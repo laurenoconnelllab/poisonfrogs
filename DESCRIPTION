@@ -2,7 +2,7 @@ Package: poisonfrogs
 Title: Color Palettes Inspired in Neotropical Poison Frogs 
 Version: 1.0.0
 Authors@R: c(
-    person("Camilo", "Rodríguez", , "camilorl@stanford.edu", role = c("aut", "cre")),
+    person("Camilo", "Rodríguez", , "camo.rodriguez@gmail.com", role = c("aut", "cre")),
     person("Lauren", "O'Connell", , "loconnel@stanford.edu", role = "aut")
     )
 Description: A collection of color palettes inspired by the enormous diversity of skin colors 

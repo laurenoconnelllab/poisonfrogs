@@ -11,7 +11,7 @@
 A collection of color palettes inspired by the enormous diversity of skin colors in Neotropical poison frog species. Suitable for use with ggplot2 and base R graphics.
 }
 \author{
-\strong{Maintainer}: Camilo Rodríguez \email{camilorl@stanford.edu}
+\strong{Maintainer}: Camilo Rodríguez \email{camo.rodriguez@gmail.com}
 
 Authors:
 \itemize{
