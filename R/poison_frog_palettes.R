@@ -62,7 +62,7 @@ poison_palettes_names <- function() sort(names(poison_palettes))
 #'
 #' Visualize colors and print hexcodes from a poison frog color palette.
 #'
-#' @param name Character. Name of poison frog palette (one of [poison_palettes_names()]).
+#' @param name Character. Name of poison frog palette (one of `poison_palettes_names()`).
 #' @param n Integer (optional). Number of colours to use. Defaults to the
 #'   palette length (max. n = 5) for `type = "discrete"` and 256 for `type = "continuous"`.
 #' @param type Either `"discrete"` or `"continuous"`.

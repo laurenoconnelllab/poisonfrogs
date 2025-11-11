@@ -1,4 +1,6 @@
 url: https://laurenoconnelllab.github.io/poisonfrogs/
 template:
   bootstrap: 5
+  assets:
+    - pkgdown/assets 
 

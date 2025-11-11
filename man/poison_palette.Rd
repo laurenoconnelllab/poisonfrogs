@@ -14,7 +14,7 @@ poison_palette(
 )
 }
 \arguments{
-\item{name}{Character. Name of poison frog palette (one of \code{\link[=poison_palettes_names]{poison_palettes_names()}}).}
+\item{name}{Character. Name of poison frog palette (one of \code{poison_palettes_names()}).}
 
 \item{n}{Integer (optional). Number of colours to use. Defaults to the
 palette length (max. n = 5) for \code{type = "discrete"} and 256 for \code{type = "continuous"}.}

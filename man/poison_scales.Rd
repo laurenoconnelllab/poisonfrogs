@@ -32,7 +32,7 @@ scale_fill_poison(
 }
 \arguments{
 \item{name}{Character. Name of the poison frog palette to use
-one of \code{\link[=poison_palette_names]{poison_palette_names()}}.}
+one of \code{poison_palette_names()}.}
 
 \item{type}{Either \code{"discrete"} or \code{"continuous"}. Selects which kind of
 ggplot2 scale is constructed.}

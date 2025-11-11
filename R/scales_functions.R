@@ -6,7 +6,7 @@
 #' gradient with [ggplot2::scale_color_gradientn()].
 #'
 #' @param name Character. Name of the poison frog palette to use
-#'   one of [poison_palette_names()].
+#'   one of `poison_palette_names()`.
 #' @param type Either `"discrete"` or `"continuous"`. Selects which kind of
 #'   ggplot2 scale is constructed.
 #' @param direction Integer. `1` for the palette in its stored order, `-1` to

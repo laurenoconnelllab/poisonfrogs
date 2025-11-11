@@ -44,8 +44,13 @@ jobs:
         with:
           extra-packages: any::rcmdcheck
           needs: check
-
+      - name: Set reproducible build time
+        run: echo "SOURCE_DATE_EPOCH=$(date +%s)" >> $GITHUB_ENV
+      - name: Normalize future mtimes
+        run: |
+          Rscript -e 'now <- Sys.time(); files <- list.files(".", recursive=TRUE, all.files=TRUE, full.names=TRUE); info <- file.info(files); fut <- rownames(info)[info$mtime > now]; if (length(fut)) for (f in fut) Sys.setFileTime(f, now)'  
       - uses: r-lib/actions/check-r-package@v2
         with:
           upload-snapshots: true
           build_args: 'c("--no-manual","--compact-vignettes=gs+qpdf")'
+      

@@ -1,0 +1,325 @@
+---
+title: "Color Palettes Inspired in Neotropical Poison Frogs"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "pkgdown/assets/web-",
+  out.width = "100%"
+)
+```
+
+<!-- badges: start -->
+![R-CMD-check](man/figures/rcmdcheck.svg)
+![Lifecycle: stable](man/figures/lifecycle-stable.svg)
+<!-- badges: end -->
+
+
+A collection of 31 colour palettes inspired in Neotropical poison frogs. With more than 200 brighly colored species, Neotropical poison frogs paint the rain forest in vivid hues that shout a clear message: "I'm toxic!". Spice up your plots with `poisonfrogs` and give your dataviz a toxic twist! But wait, we also included 11 color palettes inspired on other pretty frog species, because... why not? 
+
+## Installation
+
+You can install `poisonfrogs` from CRAN:
+
+```{r, message=FALSE, warning=FALSE, eval=FALSE}
+install.packages("poisonfrogs")
+```
+
+or from the development version in GitHub with:
+
+```{r, eval=FALSE}
+remotes::install_github("laurenoconnelllab/poisonfrogs")
+```
+
+load the package:
+```{r}
+library(poisonfrogs)
+```
+
+## Poison frog color palettes "*At a glance*"
+
+![](pkgdown/assets/Mosaic_all.png)
+
+## Meet the frogs and their colors
+
+## *Allobates femoralis*
+
+![](pkgdown/assets/Afemoralis.png)Inspired after the brilliant-thighed poison frog, *Allobates femoralis*, from the Nouragues rainforest in French Guiana.
+
+## *Andinobates fulguritus*
+
+![](pkgdown/assets/Afulguritus.png)Inspired after the Yellow-bellied poison frog, *Andinobates fulguritus*, from the Pacífic rainforest in Colombia.
+
+## *Andinobates minutus*
+
+![](pkgdown/assets/Aminutus.png)Inspired after the Blue-bellied poison frog, *Andinobates minutus*, from the Pacífic rainforest in Colombia.
+
+## *Ameerega macero*
+
+![](pkgdown/assets/Amacero.png)Inspired after the Blue-bellied poison frog, *Andinobates minutus*, from the Pacífic rainforest in Colombia.
+
+## *Ameerega shihuemoy*
+
+![](pkgdown/assets/Ashihuemoy.png)Inspired after the Amarakaeri poison frog, *Ameerega shihuemoy*, from the Peruvian rainforest in the Manú district.
+
+## *Ameerega trivittata*
+
+![](pkgdown/assets/Atrivittata.png) Inspired after the  three-striped poison frog, *Ameerega trivittata*, from the Amazon rainforest of the Tanimboca reserve, Colombia.
+
+## *Dendrobates auratus*
+
+![](pkgdown/assets/Dauratus.png) Inspired after the  three-striped poison frog, *Dendrobates auratus*, from the Pacífic rainforest in Colombia.
+
+## *Dendrobates tinctorius "alanis"*
+
+![](pkgdown/assets/Dtalanis.png) Inspired after the Dyeing poison frog, *Dendrobates tinctorius "alanis"*, from the Nouragues rainforest in French Guiana.
+
+## *Dendrobates tinctorius "azureus"*
+
+![](pkgdown/assets/Dtazureus.png) Inspired after the Blue poison frog, *Dendrobates tinctorius "azureus"*, from the rainforest in Suthern Surinam.
+
+## *Epipedobates anthonyi*
+
+![](pkgdown/assets/Eanthonyi.png) Inspired after the Anthony's poison frog, *Epipedobates anthonyi*, from the rainforest in Ecuador and Perú.
+
+## *Epipedobates darwinwallacei*
+
+![](pkgdown/assets/Edarwinwallacei.png) Inspired after the Darwin-Wallace poison frog, *Epipedobates darwinwallacei*, from the rainforest in Ecuador.
+
+## *Epipedobates tricolor*
+
+![](pkgdown/assets/Etricolor.png) Inspired after the phantasmal poison frog, *Epipedobates tricolor*, from the rainforest in Ecuador.
+
+## *Oophaga anchicayensis*
+
+![](pkgdown/assets/Oanchicayensis.png) Inspired after the Anchicayá poison frog, *Oophaga anchicayensis*, from the rainforest in western Colombia.
+
+## *Oophaga histrionica*
+
+![](pkgdown/assets/Ohistrionica.png) Inspired after the harlequin poison frog, *Oophaga histrionica*, from the rainforest in western Colombia.
+
+## *Oophaga lehmanni*
+
+![](pkgdown/assets/Olehmanni.png) Inspired after the Lehmann's poison frog, *Oophaga lehmanni*, from the rainforest in western Colombia.
+
+## *Oophaga pumilio "bluejeans"*
+
+![](pkgdown/assets/Opbluejeans.png) Inspired after the strawberry poison frog, *Oophaga pumilio "bluejeans"*, from the rainforest in Central America.
+
+## *Oophaga pumilio "colón"*
+
+![](pkgdown/assets/Opcolon.png) Inspired after the strawberry poison frog, *Oophaga pumilio "colón"*, from the Isla Colón in Bocas del Toro, Panamá.
+
+## *Oophaga pumilio "escudo"*
+
+![](pkgdown/assets/Opescudo.png) Inspired after the strawberry poison frog, *Oophaga pumilio "escudo"*, from the Isla Escudo de Veraguas in Bocas del Toro, Panamá.
+
+## *Oophaga pumilio "loma"*
+
+![](pkgdown/assets/Oploma.png) Inspired after the strawberry poison frog, *Oophaga pumilio "loma"*, from the Isla Loma Partida in Bocas del Toro, Panamá.
+
+## *Oophaga pumilio "sancristobal"*
+
+![](pkgdown/assets/Opsancristobal.png) Inspired after the strawberry poison frog, *Oophaga pumilio "sancristobal"*, from the Isla San Cristóbal in Bocas del Toro, Panamá.
+
+## *Oophaga pumilio "uyama"*
+
+![](pkgdown/assets/Opuyama.png) Inspired after the strawberry poison frog, *Oophaga pumilio "uyama"*, from the Río Uyama in Bocas del Toro, Panamá.
+
+## *Oophaga sylvatica "colón"*
+
+![](pkgdown/assets/Oscolon.png) Inspired after the little devil poison frog, *Oophaga sylvatica "colón"*, from the Cristobal Colón population in Ecuador.
+
+## *Oophaga sylvatica "koi"*
+
+![](pkgdown/assets/Oskoi.png) Inspired after the little devil poison frog, *Oophaga sylvatica "koi"*, from the "koi" population in Nariño, Colombia.
+
+## *Oophaga sylvatica "lita"*
+
+![](pkgdown/assets/Oslita.png) Inspired after the little devil poison frog, *Oophaga sylvatica "lita"*, from the Lita population in Ecuador.
+
+## *Oophaga sylvatica "otokiki"*
+
+![](pkgdown/assets/Osotokiki.png) Inspired after the little devil poison frog, *Oophaga sylvatica "otokiki"*, from the Otokiki population in Ecuador.
+
+## *Oophaga sylvatica "sanantonio"*
+
+![](pkgdown/assets/Ossanantonio.png) Inspired after the little devil poison frog, *Oophaga sylvatica "sanantonio"*, from the San Antonio population in Ecuador.
+
+## *Oophaga sylvatica "Ceiba"*
+
+![](pkgdown/assets/Osceiba.png) Inspired after the little devil poison frog, *Oophaga sylvatica "Ceiba"*, from the Ceiba population in Ecuador.
+
+## *Phyllobates terribilis*
+
+![](pkgdown/assets/Pterribilis.png) Inspired after the golden poison frog, *Phyllobates terribilis*, from the rainforest in Cauca, Colombia.
+
+## *Ranitomeya amazonica*
+
+![](pkgdown/assets/Ramazonica.png) Inspired after the Amazonian poison frog, *Ranitomeya amazonica*, from the Amazon rainforest of the Tanimboca reserve, Colombia.
+
+## *Ranitomeya imitator "striped"*
+
+![](pkgdown/assets/Ristriped.png) Inspired after the mimic poison frog, *Ranitomeya imitator "striped"*, from the rainforest in Perú.
+
+## *Ranitomeya imitator "banded"*
+
+![](pkgdown/assets/Ribanded.png) Inspired after the mimic poison frog, *Ranitomeya imitator "banded"*, from the rainforest in Perú.
+
+## *Ranitomeya variabilis*
+
+![](pkgdown/assets/Rvariabilis.png) Inspired after the Zimmerman's poison frog, *Ranitomeya variabilis*, from the rainforest in Perú.
+
+## Other frog species
+
+## *Boana picturata*
+
+![](pkgdown/assets/Bpicturata.png) Inspired after the Imbabura tree frog, *Boana picturata*, from the Pacific lowlands in Colombia and Ecuador.
+
+## *Dendropsophus sarayacuensis*
+
+![](pkgdown/assets/Dsarayacuensis.png) Inspired after the Shreve's Sarayacu tree frog, *Dendropsophus sarayacuensis*, from the Amazon rainforest of the Tanimboca reserve, Colombia.
+
+## *Hypsiboas cinerascens*
+
+![](pkgdown/assets/Hcinerascens.png) Inspired after the Demerara Falls tree frog, *Hypsiboas cinerascens*, from the Amazon rainforest of the Tanimboca reserve, Colombia.
+
+## *Hypsiboas hobbsi*
+
+![](pkgdown/assets/Hhobbsi.png) Inspired after the Hobbs' tree frog, *Hypsiboas hobbsi*, from the Amazon rainforest of the Tanimboca reserve, Colombia.
+
+## *Hyalinobatrachium aureoguttatum*
+
+![](pkgdown/assets/Haureoguttatum.png) Inspired after the Sun glass frog, *Hyalinobatrachium aureoguttatum*, from the rainforest in Ecuador.
+
+## *Lithodythes lineatus*
+
+![](pkgdown/assets/Llineatus.png) Inspired after the Gold-striped frog, *Lithodythes lineatus*, from the Amazon rainforest of the Tanimboca reserve, Colombia.
+
+## *Mantela laevigata*
+
+![](pkgdown/assets/Mlaevigata.png) Inspired after the climbing mantella, *Mantela laevigata*, from subtropical forest in Madagascar.
+
+## *Phyllomedusa tomopterna*
+
+![](pkgdown/assets/Ptomopterna.png) Inspired after the tiger-striped tree frog, *Phyllomedusa tomopterna*, from the Amazon rainforest of the Tanimboca reserve, Colombia.
+
+## *Phyllomedusa vaillantii*
+
+![](pkgdown/assets/Pvaillantii.png) Inspired after the white-lined leaf frog, *Phyllomedusa vaillantii*, from the Amazon rainforest of the Tanimboca reserve, Colombia.
+
+## *Rhinella marina*
+
+![](pkgdown/assets/Rmarina.png) Inspired after the cane toad, *Rhinella marina*, from the Nouragues rainforest in French Guiana.
+
+## Usage
+
+To call the names of all the 42 colour palettes in poisonfrogs:
+
+```{r}
+poison_palettes_names()
+```
+
+Plot poison frog palettes and print the hex codes of the colours in every palette:
+
+```{r, fig.width=7, fig.height=1.2}
+# plot palette with hex codes
+poison_palette("Haureoguttatum")
+
+# get hex codes for a vector
+cols <- poison_palette("Dtalanis", return = "vector")
+
+cols
+
+```
+
+## Examples
+
+### Continuos scale
+
+```{r, message=FALSE, warning=FALSE, out.width='60%', fig.align='center'}
+
+require(tidyverse)
+require(gapminder)
+require(gridExtra)
+require(ggridges)
+
+#continuous scale
+
+df_nottem <- tibble(
+  year  = floor(time(nottem)),
+  month = factor(month.abb[cycle(nottem)], levels = month.abb),
+  temp  = as.numeric(nottem)
+)
+
+p1 <- ggplot(df_nottem, aes(x = temp, y = month, fill = after_stat(x))) +
+  geom_density_ridges_gradient(scale = 2, rel_min_height = 0.01) +
+  scale_fill_poison(
+    name = "Oskoi",
+    type = "continuous",
+    alpha = 0.95,
+    direction = -1) +
+  labs(
+  fill = "ºF",
+  y = NULL,
+  x = NULL) +
+  theme_classic(base_size = 20, base_line_size = 0.5) +
+  theme(legend.position = "right", legend.justification = "left",
+  legend.margin = margin(0,0,0,0),
+  legend.box.margin = margin(-5,-5,-5,-5)) +
+  coord_cartesian(clip = "off")
+
+p1
+```
+
+### Discrete scale 1
+
+```{r, message=FALSE, warning=FALSE, out.width='60%', fig.align='center'}
+
+#discrete scale 1
+p2 <- ggplot(gapminder, aes(x = continent, y = lifeExp, fill = continent)) +
+  geom_boxplot(alpha = 0.95, outliers = F) +
+  geom_jitter(
+    shape = 21,
+    position = position_jitter(0.1),
+    alpha = 0.2,
+    size = 0.8,
+    bg = "grey"
+  ) +
+  stat_summary(
+    fun = mean,
+    geom = "point",
+    size = 1.5,
+    color = "black",
+    alpha = 0.6
+  ) +
+  theme_classic(base_size = 20, base_line_size = 0.5) +
+  scale_fill_poison(
+    name = "Oanchicayensis",
+    type = "discrete",
+    alpha = 0.95,
+    direction = -1
+  ) +
+  theme(legend.position = "none") +
+  xlab(NULL) +
+  ylab("Life Expentancy")
+
+p2
+```
+
+### Discrete scale 2
+```{r, message=FALSE, warning=FALSE, out.width='60%', fig.align='center'}
+#discrete scale 2
+p3 <- ggplot(gapminder, aes(x = lifeExp, y = log(gdpPercap), colour = continent)) +
+  geom_point(alpha = 0.2) +
+  scale_colour_poison(name = "Ramazonica", type = "discrete") +
+  stat_smooth() +
+  facet_wrap(.~continent, scales = "free") +
+  theme_minimal(20, base_line_size = 0.2) +
+  theme(legend.position = "none",
+  strip.background = element_blank(), strip.placement = "outside") 
+
+p3
+```
