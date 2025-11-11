@@ -12,3 +12,4 @@
 ^poisonfrogs\.Rproj$
 ^cran-comments\.md$
 ^index\.Rmd$
+^revdep$
