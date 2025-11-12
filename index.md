@@ -3,14 +3,14 @@
 ![R-CMD-check](reference/figures/rcmdcheck.svg)![Lifecycle:
 stable](reference/figures/lifecycle-stable.svg)
 
-![](reference/figures/frogs_plots_mosaic.png)
-
 A collection of 31 colour palettes inspired by Neotropical poison frogs.
 With more than 200 brighly colored species, Neotropical poison frogs
 paint the rain forest in vivid hues that shout a clear message: “I’m
 toxic!”. Spice up your plots with `poisonfrogs` and give your dataviz a
-toxic twist! But wait, we also included 11 color palettes inspired on
-other pretty frog species, because… why not?
+toxic twist! But wait, we also included 11 color palettes inspired by
+other pretty frog species, because… why not? 🐸
+
+![](reference/figures/frogs_plots_mosaic.png)
 
 ## Installation
 
