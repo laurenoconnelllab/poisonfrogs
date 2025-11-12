@@ -15,17 +15,16 @@ knitr::opts_chunk$set(
 
 # Color Palettes Inspired by Neotropical Poison Frogs <img src="man/figures/logo.png" width="180px" align="right"/>
 
-
 <!-- badges: start -->
-![R-CMD-check](man/figures/rcmdcheck.svg)
-![Lifecycle: stable](man/figures/lifecycle-stable.svg)
+
+![R-CMD-check](man/figures/rcmdcheck.svg) ![Lifecycle: stable](man/figures/lifecycle-stable.svg)
+
 <!-- badges: end -->
 
-
+A collection of 31 colour palettes inspired by Neotropical poison frogs. With more than 200 brighly colored species, Neotropical poison frogs paint the rain forest in vivid hues that shout a clear message: "I'm toxic!". Spice up your plots with `poisonfrogs` and give your dataviz a toxic twist! But wait, we also included 11 color palettes inspired by other pretty frog species, because... why not? 🐸
 
 ![](man/figures/frogs_plots_mosaic.png)
 
-A collection of 31 colour palettes inspired by Neotropical poison frogs. With more than 200 brighly colored species, Neotropical poison frogs paint the rain forest in vivid hues that shout a clear message: "I'm toxic!". Spice up your plots with `poisonfrogs` and give your dataviz a toxic twist! But wait, we also included 11 color palettes inspired on other pretty frog species, because... why not? 
 
 ## Installation
 
@@ -42,6 +41,7 @@ remotes::install_github("laurenoconnelllab/poisonfrogs")
 ```
 
 load the package:
+
 ```{r}
 library(poisonfrogs)
 ```
@@ -49,7 +49,6 @@ library(poisonfrogs)
 ## Poison frog color palettes "*At a glance*"
 
 ![](man/figures/Mosaic_all.png)
-
 
 ## Usage
 
@@ -59,13 +58,15 @@ To see the names of all colour palettes in poisonfrogs:
 poison_palettes_names()
 ```
 
-Plot poison frog palettes: 
+Plot poison frog palettes:
+
 ```{r, fig.width=7, fig.height=1.2}
 # plot palette with hex codes
 poison_palette("Haureoguttatum")
 ```
 
 or get their hex codes:
+
 ```{r}
 # get hex codes for a vector
 poison_palette("Haureoguttatum", return = "vector")
@@ -147,6 +148,7 @@ p2
 ```
 
 ### Discrete scale 2
+
 ```{r, message=FALSE, warning=FALSE, out.width='60%', fig.align='center'}
 #discrete scale 2
 p3 <- ggplot(gapminder, aes(x = lifeExp, y = log(gdpPercap), colour = continent)) +
