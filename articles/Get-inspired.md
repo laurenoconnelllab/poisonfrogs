@@ -1,0 +1,232 @@
+# Get inspired: meet the frogs and their colors
+
+Meet the species and populations that inspired this package:
+
+## *Allobates femoralis*
+
+![](images/Afemoralis.png)Inspired after the brilliant-thighed poison
+frog, *Allobates femoralis*, from the Nouragues rainforest in French
+Guiana.
+
+## *Andinobates fulguritus*
+
+![](images/Afulguritus.png)Inspired after the Yellow-bellied poison
+frog, *Andinobates fulguritus*, from the Pacífic rainforest in Colombia.
+
+## *Andinobates minutus*
+
+![](images/Aminutus.png)Inspired after the Blue-bellied poison frog,
+*Andinobates minutus*, from the Pacífic rainforest in Colombia.
+
+## *Ameerega macero*
+
+![](images/Amacero.png)Inspired after the Blue-bellied poison frog,
+*Andinobates minutus*, from the Pacífic rainforest in Colombia.
+
+## *Ameerega shihuemoy*
+
+![](images/Ashihuemoy.png)Inspired after the Amarakaeri poison frog,
+*Ameerega shihuemoy*, from the Peruvian rainforest in the Manú district.
+
+## *Ameerega trivittata*
+
+![](images/Atrivittata.png) Inspired after the three-striped poison
+frog, *Ameerega trivittata*, from the Amazon rainforest of the Tanimboca
+reserve, Colombia.
+
+## *Dendrobates auratus*
+
+![](images/Dauratus.png) Inspired after the three-striped poison frog,
+*Dendrobates auratus*, from the Pacífic rainforest in Colombia.
+
+## *Dendrobates tinctorius “alanis”*
+
+![](images/Dtalanis.png) Inspired after the Dyeing poison frog,
+*Dendrobates tinctorius “alanis”*, from the Nouragues rainforest in
+French Guiana.
+
+## *Dendrobates tinctorius “azureus”*
+
+![](images/Dtazureus.png) Inspired after the Blue poison frog,
+*Dendrobates tinctorius “azureus”*, from the rainforest in Suthern
+Surinam.
+
+## *Epipedobates anthonyi*
+
+![](images/Eanthonyi.png) Inspired after the Anthony’s poison frog,
+*Epipedobates anthonyi*, from the rainforest in Ecuador and Perú.
+
+## *Epipedobates darwinwallacei*
+
+![](images/Edarwinwallacei.png) Inspired after the Darwin-Wallace poison
+frog, *Epipedobates darwinwallacei*, from the rainforest in Ecuador.
+
+## *Epipedobates tricolor*
+
+![](images/Etricolor.png) Inspired after the phantasmal poison frog,
+*Epipedobates tricolor*, from the rainforest in Ecuador.
+
+## *Oophaga anchicayensis*
+
+![](images/Oanchicayensis.png) Inspired after the Anchicayá poison frog,
+*Oophaga anchicayensis*, from the rainforest in western Colombia.
+
+## *Oophaga histrionica*
+
+![](images/Ohistrionica.png) Inspired after the harlequin poison frog,
+*Oophaga histrionica*, from the rainforest in western Colombia.
+
+## *Oophaga lehmanni*
+
+![](images/Olehmanni.png) Inspired after the Lehmann’s poison frog,
+*Oophaga lehmanni*, from the rainforest in western Colombia.
+
+## *Oophaga pumilio “bluejeans”*
+
+![](images/Opbluejeans.png) Inspired after the strawberry poison frog,
+*Oophaga pumilio “bluejeans”*, from the rainforest in Central America.
+
+## *Oophaga pumilio “colón”*
+
+![](images/Opcolon.png) Inspired after the strawberry poison frog,
+*Oophaga pumilio “colón”*, from the Isla Colón in Bocas del Toro,
+Panamá.
+
+## *Oophaga pumilio “escudo”*
+
+![](images/Opescudo.png) Inspired after the strawberry poison frog,
+*Oophaga pumilio “escudo”*, from the Isla Escudo de Veraguas in Bocas
+del Toro, Panamá.
+
+## *Oophaga pumilio “loma”*
+
+![](images/Oploma.png) Inspired after the strawberry poison frog,
+*Oophaga pumilio “loma”*, from the Isla Loma Partida in Bocas del Toro,
+Panamá.
+
+## *Oophaga pumilio “sancristobal”*
+
+![](images/Opsancristobal.png) Inspired after the strawberry poison
+frog, *Oophaga pumilio “sancristobal”*, from the Isla San Cristóbal in
+Bocas del Toro, Panamá.
+
+## *Oophaga pumilio “uyama”*
+
+![](images/Opuyama.png) Inspired after the strawberry poison frog,
+*Oophaga pumilio “uyama”*, from the Río Uyama in Bocas del Toro, Panamá.
+
+## *Oophaga sylvatica “colón”*
+
+![](images/Oscolon.png) Inspired after the little devil poison frog,
+*Oophaga sylvatica “colón”*, from the Cristobal Colón population in
+Ecuador.
+
+## *Oophaga sylvatica “koi”*
+
+![](images/Oskoi.png) Inspired after the little devil poison frog,
+*Oophaga sylvatica “koi”*, from the “koi” population in Nariño,
+Colombia.
+
+## *Oophaga sylvatica “lita”*
+
+![](images/Oslita.png) Inspired after the little devil poison frog,
+*Oophaga sylvatica “lita”*, from the Lita population in Ecuador.
+
+## *Oophaga sylvatica “otokiki”*
+
+![](images/Osotokiki.png) Inspired after the little devil poison frog,
+*Oophaga sylvatica “otokiki”*, from the Otokiki population in Ecuador.
+
+## *Oophaga sylvatica “sanantonio”*
+
+![](images/Ossanantonio.png) Inspired after the little devil poison
+frog, *Oophaga sylvatica “sanantonio”*, from the San Antonio population
+in Ecuador.
+
+## *Oophaga sylvatica “Ceiba”*
+
+![](images/Osceiba.png) Inspired after the little devil poison frog,
+*Oophaga sylvatica “Ceiba”*, from the Ceiba population in Ecuador.
+
+## *Phyllobates terribilis*
+
+![](images/Pterribilis.png) Inspired after the golden poison frog,
+*Phyllobates terribilis*, from the rainforest in Cauca, Colombia.
+
+## *Ranitomeya amazonica*
+
+![](images/Ramazonica.png) Inspired after the Amazonian poison frog,
+*Ranitomeya amazonica*, from the Amazon rainforest of the Tanimboca
+reserve, Colombia.
+
+## *Ranitomeya imitator “striped”*
+
+![](images/Ristriped.png) Inspired after the mimic poison frog,
+*Ranitomeya imitator “striped”*, from the rainforest in Perú.
+
+## *Ranitomeya imitator “banded”*
+
+![](images/Ribanded.png) Inspired after the mimic poison frog,
+*Ranitomeya imitator “banded”*, from the rainforest in Perú.
+
+## *Ranitomeya variabilis*
+
+![](images/Rvariabilis.png) Inspired after the Zimmerman’s poison frog,
+*Ranitomeya variabilis*, from the rainforest in Perú.
+
+## Other frog species
+
+## *Boana picturata*
+
+![](images/Bpicturata.png) Inspired after the Imbabura tree frog, *Boana
+picturata*, from the Pacific lowlands in Colombia and Ecuador.
+
+## *Dendropsophus sarayacuensis*
+
+![](images/Dsarayacuensis.png) Inspired after the Shreve’s Sarayacu tree
+frog, *Dendropsophus sarayacuensis*, from the Amazon rainforest of the
+Tanimboca reserve, Colombia.
+
+## *Hypsiboas cinerascens*
+
+![](images/Hcinerascens.png) Inspired after the Demerara Falls tree
+frog, *Hypsiboas cinerascens*, from the Amazon rainforest of the
+Tanimboca reserve, Colombia.
+
+## *Hypsiboas hobbsi*
+
+![](images/Hhobbsi.png) Inspired after the Hobbs’ tree frog, *Hypsiboas
+hobbsi*, from the Amazon rainforest of the Tanimboca reserve, Colombia.
+
+## *Hyalinobatrachium aureoguttatum*
+
+![](images/Haureoguttatum.png) Inspired after the Sun glass frog,
+*Hyalinobatrachium aureoguttatum*, from the rainforest in Ecuador.
+
+## *Lithodythes lineatus*
+
+![](images/Llineatus.png) Inspired after the Gold-striped frog,
+*Lithodythes lineatus*, from the Amazon rainforest of the Tanimboca
+reserve, Colombia.
+
+## *Mantela laevigata*
+
+![](images/Mlaevigata.png) Inspired after the climbing mantella,
+*Mantela laevigata*, from subtropical forest in Madagascar.
+
+## *Phyllomedusa tomopterna*
+
+![](images/Ptomopterna.png) Inspired after the tiger-striped tree frog,
+*Phyllomedusa tomopterna*, from the Amazon rainforest of the Tanimboca
+reserve, Colombia.
+
+## *Phyllomedusa vaillantii*
+
+![](images/Pvaillantii.png) Inspired after the white-lined leaf frog,
+*Phyllomedusa vaillantii*, from the Amazon rainforest of the Tanimboca
+reserve, Colombia.
+
+## *Rhinella marina*
+
+![](images/Rmarina.png) Inspired after the cane toad, *Rhinella marina*,
+from the Nouragues rainforest in French Guiana.

@@ -1,9 +1,11 @@
-# Color Palettes Inspired in Neotropical Poison Frogs
+# Color Palettes Inspired by Neotropical Poison Frogs
 
 ![R-CMD-check](reference/figures/rcmdcheck.svg)![Lifecycle:
 stable](reference/figures/lifecycle-stable.svg)
 
-A collection of 31 colour palettes inspired in Neotropical poison frogs.
+![](reference/figures/frogs_plots_mosaic.png)
+
+A collection of 31 colour palettes inspired by Neotropical poison frogs.
 With more than 200 brighly colored species, Neotropical poison frogs
 paint the rain forest in vivid hues that shout a clear message: “I’m
 toxic!”. Spice up your plots with `poisonfrogs` and give your dataviz a
@@ -36,7 +38,7 @@ library(poisonfrogs)
 
 ## Usage
 
-To call the names of all the 42 colour palettes in poisonfrogs:
+To see the names of all colour palettes in poisonfrogs:
 
 ``` r
 poison_palettes_names()
@@ -53,8 +55,7 @@ poison_palettes_names()
 #> [41] "Rmarina"         "Rvariabilis"
 ```
 
-Plot poison frog palettes and print the hex codes of the colours in
-every palette:
+Plot poison frog palettes:
 
 ``` r
 # plot palette with hex codes
@@ -63,13 +64,12 @@ poison_palette("Haureoguttatum")
 
 ![](reference/figures/README-unnamed-chunk-6-1.png)
 
+or get their hex codes:
+
 ``` r
-
 # get hex codes for a vector
-cols <- poison_palette("Dtalanis", return = "vector")
-
-cols
-#> [1] "#090B0A" "#263F48" "#499AC1" "#EEA715" "#FED126"
+poison_palette("Haureoguttatum", return = "vector")
+#> [1] "#732937" "#565902" "#D9A404" "#D9CAB0" "#F2F2F2"
 ```
 
 ## Examples
@@ -111,7 +111,7 @@ p1 <- ggplot(df_nottem, aes(x = temp, y = month, fill = after_stat(x))) +
 p1
 ```
 
-![](reference/figures/README-unnamed-chunk-7-1.png)
+![](reference/figures/README-unnamed-chunk-8-1.png)
 
 ### Discrete scale 1
 
@@ -148,7 +148,7 @@ p2 <- ggplot(gapminder, aes(x = continent, y = lifeExp, fill = continent)) +
 p2
 ```
 
-![](reference/figures/README-unnamed-chunk-8-1.png)
+![](reference/figures/README-unnamed-chunk-9-1.png)
 
 ### Discrete scale 2
 
@@ -166,4 +166,4 @@ p3 <- ggplot(gapminder, aes(x = lifeExp, y = log(gdpPercap), colour = continent)
 p3
 ```
 
-![](reference/figures/README-unnamed-chunk-9-1.png)
+![](reference/figures/README-unnamed-chunk-10-1.png)
