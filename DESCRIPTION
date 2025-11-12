@@ -1,5 +1,5 @@
 Package: poisonfrogs
-Title: Color Palettes Inspired in Neotropical Poison Frogs 
+Title: Color Palettes Inspired by Neotropical Poison Frogs 
 Version: 0.0.0.9000
 Authors@R: c(
     person("Camilo", "Rodríguez", , "camo.rodriguez@gmail.com", role = c("aut", "cre")),
@@ -21,3 +21,4 @@ Suggests:
     gapminder,
     ggridges
 Config/testthat/edition: 3    
+Config/Needs/website: rmarkdown

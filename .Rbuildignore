@@ -13,3 +13,5 @@
 ^cran-comments\.md$
 ^index\.Rmd$
 ^revdep$
+^pkgdown/assets/
+^vignettes/articles$
