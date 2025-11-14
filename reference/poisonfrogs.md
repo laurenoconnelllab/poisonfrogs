@@ -8,7 +8,7 @@ skin colors in Neotropical poison frog species. Suitable for use with
 
 Useful links:
 
-- <https://laurenoconnelllab.github.io/poisonfrogs>
+- <https://laurenoconnelllab.github.io/poisonfrogs/>
 
 - Report bugs at
   <https://github.com/laurenoconnelllab/poisonfrogs/issues>
