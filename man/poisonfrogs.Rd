@@ -13,7 +13,7 @@ A collection of color palettes inspired by the enormous diversity of skin colors
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://laurenoconnelllab.github.io/poisonfrogs}
+  \item \url{https://laurenoconnelllab.github.io/poisonfrogs/}
   \item Report bugs at \url{https://github.com/laurenoconnelllab/poisonfrogs/issues}
 }
 
