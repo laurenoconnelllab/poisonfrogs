@@ -273,9 +273,8 @@ p3 <- ggplot(
   gapminder,
   aes(x = lifeExp, y = log(gdpPercap), colour = continent)
 ) +
-  geom_point(alpha = 0.2) +
-  scale_colour_poison(name = "Osceiba", type = "discrete") +
-  stat_smooth() +
+  geom_point(alpha = 0.9) +
+  scale_colour_poison(name = "Amacero", type = "discrete") +
   facet_wrap(. ~ continent, scales = "free") +
   theme_minimal(10, base_line_size = 0.2) +
   theme(
@@ -301,6 +300,7 @@ sz <- rescale(y, to = c(2, 14)) # point sizes
 
 df <- data.frame(x, y, sz)
 
+
 #---- 2) Get the Oskoi palette ----
 palpois <- poison_palette(
   "Ramazonica",
@@ -312,14 +312,13 @@ palpois <- poison_palette(
 #---- 3) Plot ----
 p4 <- ggplot(df, aes(x, y)) +
   geom_point(
-    aes(fill = y, size = sz),
-    shape = 21,
-    color = "black",
+    aes(color = y, size = sz),
+    shape = 16,
     alpha = 0.95,
     stroke = 0.6
   ) +
   scale_size_identity(guide = "none") +
-  scale_fill_gradientn(colors = palpois, name = NULL) +
+  scale_color_poison("Ramazonica", type = "continuous", direction = 1) +
   theme_minimal() +
   ylim(0, 18) +
   xlim(0, 11)
@@ -327,8 +326,15 @@ p4 <- ggplot(df, aes(x, y)) +
 p4
 
 
+?pch
 #all plots
 grid.arrange(p1, arrangeGrob(p2, p3, nrow = 2), nrow = 1)
+
+grid.arrange(p1, p2, ncol = 2)
+
+library(ggpubr)
+
+ggarrange(p1, p2)
 
 
 library(ggplot2)
@@ -407,6 +413,95 @@ rgl.bg(color = "white")
 rgl::rglwidget()
 
 
+mtcars |>
+  as.matrix() |>
+  heatmap(scale = "column", col = poison_palette("Oskoi", return = "vector"))
 
-URL: https://laurenoconnelllab.github.io/poisonfrogs/
-BugReports: https://github.com/laurenoconnelllab/poisonfrogs/issues
+
+ggplot(diamonds, aes(x, depth)) +
+  stat_density_2d(
+    aes(fill = stat(nlevel)),
+    geom = "polygon",
+    n = 100,
+    bins = 10,
+    contour = TRUE
+  ) +
+  facet_wrap(clarity ~ .) +
+  scale_fill_poison("Ohistrionica", type = "continuous", direction = 1)
+
+x1 <- -10:10
+y1 <- -10:10
+z1 <- sqrt(outer(x1^2, y1^2, "+"))
+
+image(
+  x1,
+  y1,
+  z1,
+  col = poison_palette(
+    "Ramazonica",
+    return = "vector",
+    type = "continuous",
+    direction = 1,
+    n = 20
+  )
+)
+
+
+?image
+
+
+library(colorblindcheck)
+
+palette_check(poison_palette("Rmarina", return = "vector"), plot = TRUE)
+
+
+set.seed(123)
+x <- rnorm(1000) * 77
+y <- rnorm(1000)
+
+pb1 <- smoothScatter(
+  y ~ x,
+  colramp = colorRampPalette(poison_palette(
+    "Amacero",
+    return = "vector",
+    type = "continuous",
+    direction = 1
+  ))
+)
+
+par(mfrow = c(1, 2))
+pb2 <- smoothScatter(
+  y ~ x,
+  colramp = colorRampPalette(poison_palette(
+    "Ramazonica",
+    return = "vector",
+    type = "continuous",
+    direction = 1
+  )),
+  xlab = "",
+  ylab = ""
+)
+
+
+set.seed(123) # for reproducibility
+group <- factor(sample(letters[1:5], 100, replace = TRUE)) # 5-factor variable (a–e)
+value <- rnorm(100, mean = 10, sd = 2)
+
+dev.off()
+
+pb1 <- boxplot(
+  value ~ group,
+  col = poison_palette(
+    "Oanchicayensis",
+    return = "vector",
+    type = "discrete",
+    direction = 1
+  ),
+  xlab = "",
+  ylab = ""
+)
+
+
+library(patchwork)
+
+p1 + p2

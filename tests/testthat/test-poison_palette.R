@@ -68,6 +68,6 @@ test_that("alpha adds transparency but keeps valid hex", {
 test_that("invalid palette name errors with helpful message", {
   expect_error(
     poison_palette("this_palette_does_not_exist", return = "vector"),
-    "Palette 'this_palette_does_not_exist' not found. Available: Afemoralis, Afulguritus, Amacero, Aminutus, Ashihuemoy, Atrivittata, Bpicturata, Dauratus, Dsarayacuensis, Dtalanis, Dtazureus, Eanthonyi, Edarwinwallacei, Etricolor, Haureoguttatum, Hcinerascens, Hhobbsi, Llineatus, Mlaevigata, Oanchicayensis, Ohistrionica, Olehmanni, Opbluejeans, Opcolon, Opescudo, Oploma, Opsancristobal, Opuyama, Osceiba, Oscolon, Oskoi, Oslita, Osotokiki, Ossanantonio, Pterribilis, Ptomopterna, Pvaillantii, Ramazonica, Ribanded, Ristriped, Rmarina, Rvariabilis"
+    "Palette 'this_palette_does_not_exist' not found. Available: Afemoralis, Afulguritus, Amacero, Aminutus, Ashihuemoy, Atrivittata, Bpicturata, Dauratus, Dsarayacuensis, Dtazureus, Dtnouragues, Eanthonyi, Edarwinwallacei, Etricolor, Haureoguttatum, Hcinerascens, Hhobbsi, Llineatus, Mlaevigata, Oanchicayensis, Ohistrionica, Olehmanni, Opbluejeans, Opcolon, Opescudo, Oploma, Opsancristobal, Opuyama, Oscolon, Oskoi, Oslita, Osotokiki, Ossanantonio, Pterribilis, Ptomopterna, Pvaillantii, Ramazonica, Ribanded, Rispotted, Rmarina, Rvariabilis"
   )
 })

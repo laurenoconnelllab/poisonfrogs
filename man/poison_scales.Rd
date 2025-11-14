@@ -83,7 +83,7 @@ ggplot(gapminder, aes(x = lifeExp, y = log(gdpPercap), colour = continent)) +
 # Using `scale_color_poison()` with continuous scale
 ggplot(mtcars, aes(wt, mpg, colour = disp)) +
  geom_point(size = 3) +
- scale_color_poison("Dtalanis", type = "continuous", direction = -1) +
+ scale_color_poison("Ramazonica", type = "continuous", direction = -1) +
  stat_smooth(col = "black") +
  theme_classic(base_size = 32, base_line_size = 0.5)
 

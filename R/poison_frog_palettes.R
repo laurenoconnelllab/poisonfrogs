@@ -4,7 +4,7 @@
 #' @keywords internal
 poison_palettes <- list(
   Ramazonica = c("#3C6B78", "#538D71", "#CFA838", "#A26021", "#983E18"),
-  Ristriped = c("#2A5D86", "#658C93", "#587F61", "#C4B500", "#4A4B13"),
+  Rispotted = c("#2A5D86", "#658C93", "#587F61", "#C4B500", "#4A4B13"),
   Ribanded = c("#0C0D0C", "#F2B705", "#F29F05", "#A65D03", "#F2F2F2"),
   Rvariabilis = c("#122F51", "#3D5689", "#8E97B5", "#E1C250", "#4D4B13"),
   Afulguritus = c("#110906", "#56601B", "#A9C248", "#B2B52A", "#8DA1A9"),
@@ -13,7 +13,6 @@ poison_palettes <- list(
   Oscolon = c("#432B18", "#712C0F", "#D74905", "#FFAC18", "#FBF895"),
   Ossanantonio = c("#D9D4BA", "#F2A7B5", "#F23005", "#8C0E03", "#3F402C"),
   Oslita = c("#431509", "#862D12", "#D19F36", "#EED95D", "#D0D9D0"),
-  Osceiba = c("#F2ECE9", "#F2836B", "#F27405", "#F23A29", "#735E5A"),
   Oskoi = c("#09142A", "#B8351F", "#F88705", "#ABD0DD", "#F2F9FE"),
   Olehmanni = c("#1B110F", "#FE4705", "#F59356", "#7997A5", "#D9DFDF"),
   Oanchicayensis = c("#261717", "#5A2511", "#FA6100", "#FCC908", "#D1D3DB"),
@@ -24,7 +23,7 @@ poison_palettes <- list(
   Opsancristobal = c("#ECAA4E", "#E15511", "#48353C", "#1B5280", "#072643"),
   Opuyama = c("#9AAEB0", "#0086A1", "#214F6D", "#451A0E", "#010100"),
   Opbluejeans = c("#512118", "#D5411F", "#637C94", "#3A5169", "#181717"),
-  Dtalanis = c("#090B0A", "#263F48", "#499AC1", "#EEA715", "#FED126"),
+  Dtnouragues = c("#090B0A", "#263F48", "#499AC1", "#EEA715", "#FED126"),
   Dtazureus = c("#282349", "#161C4D", "#163978", "#4268B4", "#869BD7"),
   Dauratus = c("#171517", "#1B445B", "#4AA3B8", "#2AB8A2", "#96D02B"),
   Pterribilis = c("#42350C", "#6E5006", "#E19F05", "#F9C207", "#FCD94B"),
