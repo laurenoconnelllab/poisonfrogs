@@ -19,13 +19,13 @@ A character vector of palette names.
 poison_palettes_names()
 #>  [1] "Afemoralis"      "Afulguritus"     "Amacero"         "Aminutus"       
 #>  [5] "Ashihuemoy"      "Atrivittata"     "Bpicturata"      "Dauratus"       
-#>  [9] "Dsarayacuensis"  "Dtalanis"        "Dtazureus"       "Eanthonyi"      
+#>  [9] "Dsarayacuensis"  "Dtazureus"       "Dtnouragues"     "Eanthonyi"      
 #> [13] "Edarwinwallacei" "Etricolor"       "Haureoguttatum"  "Hcinerascens"   
 #> [17] "Hhobbsi"         "Llineatus"       "Mlaevigata"      "Oanchicayensis" 
 #> [21] "Ohistrionica"    "Olehmanni"       "Opbluejeans"     "Opcolon"        
 #> [25] "Opescudo"        "Oploma"          "Opsancristobal"  "Opuyama"        
-#> [29] "Osceiba"         "Oscolon"         "Oskoi"           "Oslita"         
-#> [33] "Osotokiki"       "Ossanantonio"    "Pterribilis"     "Ptomopterna"    
-#> [37] "Pvaillantii"     "Ramazonica"      "Ribanded"        "Ristriped"      
-#> [41] "Rmarina"         "Rvariabilis"    
+#> [29] "Oscolon"         "Oskoi"           "Oslita"          "Osotokiki"      
+#> [33] "Ossanantonio"    "Pterribilis"     "Ptomopterna"     "Pvaillantii"    
+#> [37] "Ramazonica"      "Ribanded"        "Rispotted"       "Rmarina"        
+#> [41] "Rvariabilis"    
 ```

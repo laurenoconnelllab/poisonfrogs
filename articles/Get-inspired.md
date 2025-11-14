@@ -1,11 +1,12 @@
 # Get inspired: meet the frogs and their colors
 
-Meet the species and populations that inspired this package:
+Meet the species and populations that inspired this package. We will be
+adding more species soon!
 
 ## *Allobates femoralis*
 
 ![](images/Afemoralis.png)Inspired after the brilliant-thighed poison
-frog, *Allobates femoralis*, from the Nouragues rainforest in French
+frog, *Allobates femoralis*, from the Nouragues reserve in French
 Guiana.
 
 ## *Andinobates fulguritus*
@@ -20,8 +21,8 @@ frog, *Andinobates fulguritus*, from the Pacífic rainforest in Colombia.
 
 ## *Ameerega macero*
 
-![](images/Amacero.png)Inspired after the Blue-bellied poison frog,
-*Andinobates minutus*, from the Pacífic rainforest in Colombia.
+![](images/Amacero.png)Inspired after the Manú poison frog, *Ameerega
+macero*, from the Peruvian rainforest in the Manú district.
 
 ## *Ameerega shihuemoy*
 
@@ -36,13 +37,13 @@ reserve, Colombia.
 
 ## *Dendrobates auratus*
 
-![](images/Dauratus.png) Inspired after the three-striped poison frog,
+![](images/Dauratus.png) Inspired after the green and black poison frog,
 *Dendrobates auratus*, from the Pacífic rainforest in Colombia.
 
-## *Dendrobates tinctorius “alanis”*
+## *Dendrobates tinctorius “nouragues”*
 
-![](images/Dtalanis.png) Inspired after the Dyeing poison frog,
-*Dendrobates tinctorius “alanis”*, from the Nouragues rainforest in
+![](images/Dtnouragues.png) Inspired after the Dyeing poison frog,
+*Dendrobates tinctorius “nouragues”*, from the Nouragues reserve in
 French Guiana.
 
 ## *Dendrobates tinctorius “azureus”*
@@ -143,11 +144,6 @@ Colombia.
 frog, *Oophaga sylvatica “sanantonio”*, from the San Antonio population
 in Ecuador.
 
-## *Oophaga sylvatica “Ceiba”*
-
-![](images/Osceiba.png) Inspired after the little devil poison frog,
-*Oophaga sylvatica “Ceiba”*, from the Ceiba population in Ecuador.
-
 ## *Phyllobates terribilis*
 
 ![](images/Pterribilis.png) Inspired after the golden poison frog,
@@ -159,10 +155,10 @@ in Ecuador.
 *Ranitomeya amazonica*, from the Amazon rainforest of the Tanimboca
 reserve, Colombia.
 
-## *Ranitomeya imitator “striped”*
+## *Ranitomeya imitator “spotted”*
 
-![](images/Ristriped.png) Inspired after the mimic poison frog,
-*Ranitomeya imitator “striped”*, from the rainforest in Perú.
+![](images/Rispotted.png) Inspired after the mimic poison frog,
+*Ranitomeya imitator “spotted”*, from the rainforest in Perú.
 
 ## *Ranitomeya imitator “banded”*
 
@@ -229,4 +225,4 @@ reserve, Colombia.
 ## *Rhinella marina*
 
 ![](images/Rmarina.png) Inspired after the cane toad, *Rhinella marina*,
-from the Nouragues rainforest in French Guiana.
+from the Nouragues reserve in French Guiana.

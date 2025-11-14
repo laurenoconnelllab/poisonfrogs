@@ -1,14 +1,15 @@
 # Color Palettes Inspired by Neotropical Poison Frogs
 
-![R-CMD-check](reference/figures/rcmdcheck.svg)![Lifecycle:
-stable](reference/figures/lifecycle-stable.svg)
-
-A collection of 31 colour palettes inspired by Neotropical poison frogs.
+A collection of color palettes inspired by Neotropical poison frogs.
 With more than 200 brighly colored species, Neotropical poison frogs
 paint the rain forest in vivid hues that shout a clear message: “I’m
 toxic!”. Spice up your plots with `poisonfrogs` and give your dataviz a
-toxic twist! But wait, we also included 11 color palettes inspired by
+toxic twist! But wait, we also included some color palettes inspired by
 other pretty frog species, because… why not? 🐸
+
+[Get
+inspired](https://laurenoconnelllab.github.io/poisonfrogs/articles/Get-inspired.html)
+with the collection of species behind the color palettes.
 
 ![](reference/figures/frogs_plots_mosaic.png)
 
@@ -32,7 +33,7 @@ load the package:
 library(poisonfrogs)
 ```
 
-## Poison frog color palettes “*At a glance*”
+## `poisonfrogs` color palettes “*At a glance*”
 
 ![](reference/figures/Mosaic_all.png)
 
@@ -44,21 +45,21 @@ To see the names of all colour palettes in poisonfrogs:
 poison_palettes_names()
 #>  [1] "Afemoralis"      "Afulguritus"     "Amacero"         "Aminutus"       
 #>  [5] "Ashihuemoy"      "Atrivittata"     "Bpicturata"      "Dauratus"       
-#>  [9] "Dsarayacuensis"  "Dtalanis"        "Dtazureus"       "Eanthonyi"      
+#>  [9] "Dsarayacuensis"  "Dtazureus"       "Dtnouragues"     "Eanthonyi"      
 #> [13] "Edarwinwallacei" "Etricolor"       "Haureoguttatum"  "Hcinerascens"   
 #> [17] "Hhobbsi"         "Llineatus"       "Mlaevigata"      "Oanchicayensis" 
 #> [21] "Ohistrionica"    "Olehmanni"       "Opbluejeans"     "Opcolon"        
 #> [25] "Opescudo"        "Oploma"          "Opsancristobal"  "Opuyama"        
-#> [29] "Osceiba"         "Oscolon"         "Oskoi"           "Oslita"         
-#> [33] "Osotokiki"       "Ossanantonio"    "Pterribilis"     "Ptomopterna"    
-#> [37] "Pvaillantii"     "Ramazonica"      "Ribanded"        "Ristriped"      
-#> [41] "Rmarina"         "Rvariabilis"
+#> [29] "Oscolon"         "Oskoi"           "Oslita"          "Osotokiki"      
+#> [33] "Ossanantonio"    "Pterribilis"     "Ptomopterna"     "Pvaillantii"    
+#> [37] "Ramazonica"      "Ribanded"        "Rispotted"       "Rmarina"        
+#> [41] "Rvariabilis"
 ```
 
-Plot poison frog palettes:
+Visualize poison frog palettes:
 
 ``` r
-# plot palette with hex codes
+
 poison_palette("Haureoguttatum")
 ```
 
@@ -67,21 +68,65 @@ poison_palette("Haureoguttatum")
 or get their hex codes:
 
 ``` r
-# get hex codes for a vector
+
 poison_palette("Haureoguttatum", return = "vector")
 #> [1] "#732937" "#565902" "#D9A404" "#D9CAB0" "#F2F2F2"
 ```
 
 ## Examples
 
-### Continuos scale
+### Using `poisonfrogs` in base R plots
+
+``` r
+
+par(mfrow = c(1, 2))
+
+#Discrete scale
+
+group <- factor(sample(letters[1:5], 100, replace = TRUE))
+
+value <- rnorm(100, mean = 10, sd = 1.5)
+
+boxplot(value ~ group,
+        col = poison_palette(
+    "Oanchicayensis",
+    return = "vector",
+    type = "discrete",
+    direction = 1
+  ),
+  xlab = "",
+  ylab = "")
+
+#Continuous scale
+x <- rnorm(1000) * 77
+y <- rnorm(1000)
+
+smoothScatter(
+  y ~ x,
+  colramp = colorRampPalette(poison_palette(
+    "Ramazonica",
+    return = "vector",
+    type = "continuous",
+    direction = 1
+  )),
+  xlab = "",
+  ylab = ""
+)
+```
+
+![](reference/figures/README-unnamed-chunk-8-1.png)
+
+### Using the `poison` scales in `ggplot2`
+
+#### `scale_fill_poison()`
 
 ``` r
 
 require(tidyverse)
 require(gapminder)
-require(gridExtra)
 require(ggridges)
+require(scales)
+require(patchwork)
 
 #continuous scale
 
@@ -102,24 +147,16 @@ p1 <- ggplot(df_nottem, aes(x = temp, y = month, fill = after_stat(x))) +
   fill = "ºF",
   y = NULL,
   x = NULL) +
-  theme_classic(base_size = 20, base_line_size = 0.5) +
+  theme_classic(base_size = 10, base_line_size = 0.5) +
   theme(legend.position = "right", legend.justification = "left",
   legend.margin = margin(0,0,0,0),
   legend.box.margin = margin(-5,-5,-5,-5)) +
   coord_cartesian(clip = "off")
 
-p1
-```
 
-![](reference/figures/README-unnamed-chunk-8-1.png)
-
-### Discrete scale 1
-
-``` r
-
-#discrete scale 1
+#discrete scale
 p2 <- ggplot(gapminder, aes(x = continent, y = lifeExp, fill = continent)) +
-  geom_boxplot(alpha = 0.95, outliers = F) +
+  geom_boxplot(outliers = F) +
   geom_jitter(
     shape = 21,
     position = position_jitter(0.1),
@@ -134,36 +171,61 @@ p2 <- ggplot(gapminder, aes(x = continent, y = lifeExp, fill = continent)) +
     color = "black",
     alpha = 0.6
   ) +
-  theme_classic(base_size = 20, base_line_size = 0.5) +
+  #theme_classic(base_size = 20, base_line_size = 0.5) +
   scale_fill_poison(
-    name = "Oanchicayensis",
+    name = "Amacero",
     type = "discrete",
-    alpha = 0.95,
-    direction = -1
+    alpha = 0.9,
+    direction = 1
   ) +
   theme(legend.position = "none") +
   xlab(NULL) +
   ylab("Life Expentancy")
 
-p2
+p1 + p2
 ```
 
 ![](reference/figures/README-unnamed-chunk-9-1.png)
 
-### Discrete scale 2
+#### `scale_color_poison()`
 
 ``` r
-#discrete scale 2
-p3 <- ggplot(gapminder, aes(x = lifeExp, y = log(gdpPercap), colour = continent)) +
-  geom_point(alpha = 0.2) +
-  scale_colour_poison(name = "Ramazonica", type = "discrete") +
+
+#Continuous scale
+
+set.seed(42)
+n <- 300
+x <- runif(n, 0, 10)
+y <- 1.5 + 0.9 * x + rnorm(n, sd = 0.4 + 0.25 * x)
+sz <- rescale(y, to = c(2, 14))
+
+df <- data.frame(x, y, sz)
+
+p3 <- ggplot(df, aes(x, y)) +
+  geom_point(
+    aes(color = y, size = sz),
+    shape = 16,
+    alpha = 0.95,
+    stroke = 0.6
+  ) +
+  scale_size_identity(guide = "none") +
+  scale_color_poison("Ramazonica", type = "continuous", direction = 1) +
+  theme_minimal() +
+  ylim(0, 18) +
+  xlim(0, 11)
+
+
+#discrete scale
+p4 <- ggplot(gapminder, aes(x = lifeExp, y = log(gdpPercap), colour = continent)) +
+  geom_point(alpha = 0.4) +
+  scale_colour_poison(name = "Opcolon", type = "discrete") +
   stat_smooth() +
   facet_wrap(.~continent, scales = "free") +
-  theme_minimal(20, base_line_size = 0.2) +
+  theme_minimal(10, base_line_size = 0.2) +
   theme(legend.position = "none",
-  strip.background = element_blank(), strip.placement = "outside") 
-
-p3
+  strip.background = element_blank(), strip.placement = "outside")
+  
+ p3 + p4 
 ```
 
 ![](reference/figures/README-unnamed-chunk-10-1.png)

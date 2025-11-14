@@ -10,4 +10,4 @@ poison_palettes
 
 ## Format
 
-An object of class `list` of length 42.
+An object of class `list` of length 41.
