@@ -2,7 +2,7 @@
 
 A collection of color palettes inspired by the enormous diversity of
 skin colors in Neotropical poison frog species. Suitable for use with
-\`ggplot2\` and base R graphics.
+'ggplot2' and base R graphics.
 
 ## See also
 

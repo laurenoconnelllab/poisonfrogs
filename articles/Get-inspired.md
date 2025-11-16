@@ -49,7 +49,7 @@ French Guiana.
 ## *Dendrobates tinctorius “azureus”*
 
 ![](images/Dtazureus.png) Inspired after the Blue poison frog,
-*Dendrobates tinctorius “azureus”*, from the rainforest in Suthern
+*Dendrobates tinctorius “azureus”*, from the rainforest in Southern
 Surinam.
 
 ## *Epipedobates anthonyi*
