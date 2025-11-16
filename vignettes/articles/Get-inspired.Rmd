@@ -49,7 +49,7 @@ Meet the species and populations that inspired this package. We will be adding m
 
 ## *Dendrobates tinctorius "azureus"*
 
-![](images/Dtazureus.png) Inspired after the Blue poison frog, *Dendrobates tinctorius "azureus"*, from the rainforest in Suthern Surinam.
+![](images/Dtazureus.png) Inspired after the Blue poison frog, *Dendrobates tinctorius "azureus"*, from the rainforest in Southern Surinam.
 
 ## *Epipedobates anthonyi*
 
