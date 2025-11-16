@@ -3,7 +3,7 @@ pkgdown: 2.2.0
 pkgdown_sha: ~
 articles:
   articles/Get-inspired: Get-inspired.html
-last_built: 2025-11-16T14:06Z
+last_built: 2025-11-16T17:15Z
 urls:
   reference: https://laurenoconnelllab.github.io/poisonfrogs/reference
   article: https://laurenoconnelllab.github.io/poisonfrogs/articles
