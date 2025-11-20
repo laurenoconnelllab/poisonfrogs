@@ -63,9 +63,12 @@ returns \code{n} colors (max. n = 5) on demand for \code{\link[ggplot2:discrete_
 }
 }
 \examples{
-\dontrun{
-library(ggplot2)
-library(gapminder)
+require(ggplot2)
+require(gapminder)
+require(ggridges)
+require(tibble)
+require(scales)
+
 
 # Using `scale_color_poison()` with discrete scale
 ggplot(gapminder, aes(x = lifeExp, y = log(gdpPercap), colour = continent)) +
@@ -114,6 +117,12 @@ scale_fill_poison(
 theme(legend.position = "none") +
 xlab(NULL)
 
+
+df_nottem <- tibble(year  = floor(time(nottem)),
+                    month = factor(month.abb[cycle(nottem)],
+                    levels = month.abb),
+                    temp  = as.numeric(nottem))
+
 # Using `scale_fill_poison()` with continuous scale
 ggplot(df_nottem, aes(x = temp, y = month, fill = stat(x))) +
 geom_density_ridges_gradient(scale = 2, rel_min_height = 0.01) +
@@ -132,7 +141,6 @@ theme(
  legend.margin = margin(0,0,0,0),
  legend.box.margin = margin(-20,-20,-20,-20)
  )
-}
 
 }
 \seealso{
