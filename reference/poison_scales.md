@@ -82,9 +82,17 @@ A ggplot2 scale object.
 ## Examples
 
 ``` r
-if (FALSE) { # \dontrun{
-library(ggplot2)
-library(gapminder)
+require(ggplot2)
+#> Loading required package: ggplot2
+require(gapminder)
+#> Loading required package: gapminder
+require(ggridges)
+#> Loading required package: ggridges
+require(tibble)
+#> Loading required package: tibble
+require(scales)
+#> Loading required package: scales
+
 
 # Using `scale_color_poison()` with discrete scale
 ggplot(gapminder, aes(x = lifeExp, y = log(gdpPercap), colour = continent)) +
@@ -98,6 +106,8 @@ ggplot(gapminder, aes(x = lifeExp, y = log(gdpPercap), colour = continent)) +
    strip.background = element_blank(),
    strip.placement = "outside"
    )
+#> `geom_smooth()` using method = 'loess' and formula = 'y ~ x'
+
 
 # Using `scale_color_poison()` with continuous scale
 ggplot(mtcars, aes(wt, mpg, colour = disp)) +
@@ -105,6 +115,8 @@ ggplot(mtcars, aes(wt, mpg, colour = disp)) +
  scale_color_poison("Ramazonica", type = "continuous", direction = -1) +
  stat_smooth(col = "black") +
  theme_classic(base_size = 32, base_line_size = 0.5)
+#> `geom_smooth()` using method = 'loess' and formula = 'y ~ x'
+
 
 # Using `scale_fill_poison()` with discrete scale
 ggplot(gapminder, aes(x = continent, y = lifeExp, fill = continent)) +
@@ -133,6 +145,13 @@ scale_fill_poison(
 theme(legend.position = "none") +
 xlab(NULL)
 
+
+
+df_nottem <- tibble(year  = floor(time(nottem)),
+                    month = factor(month.abb[cycle(nottem)],
+                    levels = month.abb),
+                    temp  = as.numeric(nottem))
+
 # Using `scale_fill_poison()` with continuous scale
 ggplot(df_nottem, aes(x = temp, y = month, fill = stat(x))) +
 geom_density_ridges_gradient(scale = 2, rel_min_height = 0.01) +
@@ -151,5 +170,8 @@ theme(
  legend.margin = margin(0,0,0,0),
  legend.box.margin = margin(-20,-20,-20,-20)
  )
-} # }
+#> Warning: `stat(x)` was deprecated in ggplot2 3.4.0.
+#> ℹ Please use `after_stat(x)` instead.
+#> Picking joint bandwidth of 0.942
+
 ```
