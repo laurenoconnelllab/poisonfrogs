@@ -9,7 +9,7 @@
 ## Citation
 
 Source:
-[`DESCRIPTION`](https://github.com/laurenoconnelllab/poisonfrogs/blob/main/DESCRIPTION)
+[`DESCRIPTION`](https://github.com/laurenoconnelllab/poisonfrogs/blob/v1.0.2/DESCRIPTION)
 
 Rodríguez C, O'Connell L (2025). *poisonfrogs: Color Palettes Inspired
 by Neotropical Poison Frogs*. R package version 1.0.2,
