@@ -4,6 +4,8 @@
 
 ## poisonfrogs 1.0.2
 
+CRAN release: 2025-11-24
+
 - Confirmed that there are no external publications describing the
   methods implemented in this package; therefore no references were
   added to the DESCRIPTION.
